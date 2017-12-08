@@ -18,7 +18,7 @@ void Consumer::consume(){
 
     int count=1;
     while (count) {
-        printf("Running consume of.....%d\n",id);
+//        printf("Running consume of.....%d\n",id);
         bufferLock->Acquire();
         while (currentSize == 0)
         {
@@ -27,7 +27,8 @@ void Consumer::consume(){
         }
 
         currentSize--;
-        printf("Consumer: %d consumed an item. Current size: %d\n",id,currentSize);
+        printf("Consumer: %d consumed an item\n",id);
+        printf("Current size: %d\n",currentSize);
 
         int i=0;
         while (i!=50000000)i++;
@@ -35,14 +36,14 @@ void Consumer::consume(){
         if(currentSize == maxSize-1)
         {
             printf("Consumer: %d is waking a producer\n",id);
-            consumerLock->Signal(bufferLock);
+            producerLock->Signal(bufferLock);
         }
         bufferLock->Release();
 
         i=0;
         while (i!=50000000)i++;
 
-        printf("Ending produce of.....%d\n",id);
+//        printf("Ending produce of.....%d\n",id);
         currentThread->Yield();
     }
 }

@@ -18,7 +18,7 @@ void Producer::produce() {
 
     int count=1;
     while (count) {
-        printf("Running produce of.....%d\n",id);
+//        printf("Running produce of.....%d\n",id);
         bufferLock->Acquire();
         while (currentSize == maxSize)
         {
@@ -27,7 +27,8 @@ void Producer::produce() {
         }
 
         currentSize++;
-        printf("Producer: %d produced an item Current size: %d\n",id,currentSize);
+        printf("Producer: %d produced an item\n",id);
+        printf("Current size: %d\n",currentSize);
 
         int i=0;
         while (i!=50000000)i++;
@@ -42,8 +43,8 @@ void Producer::produce() {
         i=0;
         while (i!=50000000)i++;
 
-        printf("Ending produce of.....%d\n",id);
-//        currentThread->Yield();
+//        printf("Ending produce of.....%d\n",id);
+        currentThread->Yield();
     }
 }
 

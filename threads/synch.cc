@@ -138,10 +138,10 @@ void Lock::Release() {
     }
     interrupt->SetLevel(oldLevel);
 }
-
 bool Lock::isHeldByCurrentThread() {
-    return currentThread == currentHolder;
+    return currentThread == currentHolder && status == BUSY;
 }
+
 
 
 Condition::Condition(char* debugName) {
@@ -156,12 +156,12 @@ void Condition::Wait(Lock* conditionLock) {
 //    ASSERT(false);
     IntStatus oldLevel = interrupt->SetLevel(IntOff);
 
-//    conditionLock->Acquire();
-    conditionLock->Release();
-    waitQueue->Append(currentThread);
-    currentThread->Sleep();
-    conditionLock->Acquire();
-
+    if(conditionLock->isHeldByCurrentThread()) {
+        conditionLock->Release();
+        waitQueue->Append(currentThread);
+        currentThread->Sleep();
+        conditionLock->Acquire();
+    }
     interrupt->SetLevel(oldLevel);
 }
 
@@ -169,7 +169,10 @@ void Condition::Signal(Lock* conditionLock) {
     IntStatus oldLevel = interrupt->SetLevel(IntOff);
 
 //    conditionLock->Acquire();
-    scheduler->ReadyToRun(waitQueue->Remove());
+    if(conditionLock->isHeldByCurrentThread() &&
+            !waitQueue->IsEmpty()) {
+        scheduler->ReadyToRun(waitQueue->Remove());
+    }
 
     interrupt->SetLevel(oldLevel);
 }
@@ -177,7 +180,8 @@ void Condition::Signal(Lock* conditionLock) {
 void Condition::Broadcast(Lock* conditionLock) {
     IntStatus oldLevel = interrupt->SetLevel(IntOff);
 
-    while(!waitQueue->IsEmpty())
+    while(conditionLock->isHeldByCurrentThread() &&
+            !waitQueue->IsEmpty())
     {
         scheduler->ReadyToRun(waitQueue->Remove());
     }
