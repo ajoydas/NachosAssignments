@@ -104,6 +104,7 @@ Semaphore::V()
 // Note -- without a correct implementation of Condition::Wait(), 
 // the test case in the network assignment won't work!
 Lock::Lock(char* debugName) {
+    name = debugName;
     waitList = new List<Thread*>;
 }
 Lock::~Lock() {
@@ -131,7 +132,7 @@ void Lock::Release() {
         status = FREE;
         while(!waitList->IsEmpty())
         {
-            waitList->Remove();
+            scheduler->ReadyToRun(waitList->Remove());
         }
     }
     interrupt->SetLevel(oldLevel);
@@ -143,17 +144,58 @@ bool Lock::isHeldByCurrentThread() {
 
 
 Condition::Condition(char* debugName) {
-
+    name = debugName;
+    waitQueue = new List<Thread*>;
 }
 Condition::~Condition() {
-
+    delete waitQueue;
 }
+
 void Condition::Wait(Lock* conditionLock) {
-    ASSERT(false);
+//    ASSERT(false);
+    IntStatus oldLevel = interrupt->SetLevel(IntOff);
+
+//    conditionLock->Acquire();
+    conditionLock->Release();
+    waitQueue->Append(currentThread);
+    currentThread->Sleep();
+    conditionLock->Acquire();
+
+    interrupt->SetLevel(oldLevel);
 }
+
 void Condition::Signal(Lock* conditionLock) {
+    IntStatus oldLevel = interrupt->SetLevel(IntOff);
 
+//    conditionLock->Acquire();
+    scheduler->ReadyToRun(waitQueue->Remove());
+
+    interrupt->SetLevel(oldLevel);
 }
+
 void Condition::Broadcast(Lock* conditionLock) {
+    IntStatus oldLevel = interrupt->SetLevel(IntOff);
 
+    while(!waitQueue->IsEmpty())
+    {
+        scheduler->ReadyToRun(waitQueue->Remove());
+    }
+
+    interrupt->SetLevel(oldLevel);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

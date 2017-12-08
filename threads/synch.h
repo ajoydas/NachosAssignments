@@ -69,7 +69,6 @@ class Lock {
     Lock(char* debugName);  		// initialize lock to be FREE
     ~Lock();				// deallocate lock
     char* getName() { return name; }	// debugging assist
-    List* waitList;
 
     void Acquire(); // these are the only operations on a lock
     void Release(); // they are both *atomic*
@@ -81,9 +80,10 @@ class Lock {
 
   private:
     char* name;				// for debugging
-    // plus some other stuff you'll need to define
     bool status;
     Thread* currentHolder;
+    List<Thread*> *waitList;
+
 };
 
 // The following class defines a "condition variable".  A condition
@@ -120,7 +120,7 @@ class Lock {
 
 class Condition {
   public:
-    Condition(char* debugName);		// initialize condition to 
+    Condition(char* debugName);		// initialize condition to
 					// "no one waiting"
     ~Condition();			// deallocate the condition
     char* getName() { return (name); }
@@ -136,5 +136,24 @@ class Condition {
   private:
     char* name;
     // plus some other stuff you'll need to define
+    List<Thread*> *waitQueue;
 };
 #endif // SYNCH_H
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
