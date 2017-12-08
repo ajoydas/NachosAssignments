@@ -1,0 +1,3 @@
+D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/CMakeFiles/code.dir
+D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/CMakeFiles/rebuild_cache.dir

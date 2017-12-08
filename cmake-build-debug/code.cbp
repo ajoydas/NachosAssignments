@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="code"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="code">
+				<Option output="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/code.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/include/c++"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/include/c++/mingw32"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/include"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../include"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 code"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="code/fast">
+				<Option output="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/code.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/include/c++"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/include/c++/mingw32"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/include"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/../../../../include"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 code/fast"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/Makefile">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/Makefile.common">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/Makefile.dep">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/Makefile">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/coff.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/coff2flat.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/coff2noff">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/coff2noff.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/d.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/disasm.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/encode.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/execute.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/halt">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/instr.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/int.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/main.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/noff.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/opstrings.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/out.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/bin/system.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/Makefile">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/directory.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/directory.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/filehdr.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/filehdr.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/filesys.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/filesys.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/fstest.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/openfile.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/openfile.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/synchdisk.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/synchdisk.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/test/big">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/test/medium">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/filesys/test/small">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/console.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/console.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/disk.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/disk.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/interrupt.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/interrupt.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/machine.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/machine.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/mipssim.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/mipssim.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/network.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/network.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/stats.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/stats.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/sysdep.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/sysdep.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/timer.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/timer.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/translate.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/machine/translate.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/network/Makefile">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/network/README">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/network/nettest.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/network/post.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/network/post.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/test/Makefile">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/test/halt.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/test/matmult.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/test/script">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/test/shell.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/test/sort.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/Makefile">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/copyright.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/list.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/main.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/preemptive.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/preemptive.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/scheduler.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/scheduler.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/switch.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/synch.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/synch.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/synchlist.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/system.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/system.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/thread.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/thread.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/threadtest.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/utility.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/threads/utility.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/userprog/Makefile">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/userprog/addrspace.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/userprog/addrspace.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/userprog/bitmap.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/userprog/bitmap.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/userprog/exception.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/userprog/progtest.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/userprog/syscall.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/vm/Makefile">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
