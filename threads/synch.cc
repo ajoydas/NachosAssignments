@@ -110,11 +110,37 @@ Lock::~Lock() {
     delete waitList;
 }
 void Lock::Acquire() {
-
+    IntStatus oldLevel = interrupt->SetLevel(IntOff);
+    while (true)
+    {
+        if(status == BUSY) {
+            waitList->Append(currentThread);
+            currentThread->Sleep();
+        }else
+        {
+            status = BUSY;
+            currentHolder = currentThread;
+            break;
+        }
+    }
+    interrupt->SetLevel(oldLevel);
 }
 void Lock::Release() {
-
+    IntStatus oldLevel = interrupt->SetLevel(IntOff);
+    if(status==BUSY && isHeldByCurrentThread()){
+        status = FREE;
+        while(!waitList->IsEmpty())
+        {
+            waitList->Remove();
+        }
+    }
+    interrupt->SetLevel(oldLevel);
 }
+
+bool Lock::isHeldByCurrentThread() {
+    return currentThread == currentHolder;
+}
+
 
 Condition::Condition(char* debugName) {
 
