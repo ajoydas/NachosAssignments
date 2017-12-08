@@ -71,33 +71,39 @@ Condition* consumerLock;
 
 void producerThread(int id)
 {
-    Producer producer(id);
-    producer.produce();
+    printf("Running producer.....\n");
+    Producer* producer = new Producer(id);
+    producer->produce();
 }
 
 void consumerThread(int id)
 {
-    Consumer consumer(id);
-    consumer.consume();
+    printf("Running consumer.....\n");
+    Consumer* consumer = new Consumer(id);
+    consumer->consume();
 }
 
 void
 ThreadTest()
 {
     DEBUG('t', "Running Producer-Consumer");
-    currentSize= 0;
+    currentSize= 1;
     maxSize = 100;
     bufferLock = new Lock("Buffer Lock");
     producerLock = new Condition("Producer Lock");
     consumerLock = new Condition("Consumer Lock");
 
     Thread *producers[10], *consumers[10];
-    for(int i=0;i<10;i++)
+    for(int i=0;i<2;i++)
     {
         producers[i] = new Thread("Producer thread"+i+1);
         producers[i]->Fork(reinterpret_cast<VoidFunctionPtr>(producerThread)
                 , reinterpret_cast<void *>(i + 1));
 
+    }
+
+    for(int i=0;i<2;i++)
+    {
         consumers[i] = new Thread("Producer thread"+i+1);
         consumers[i]->Fork(reinterpret_cast<VoidFunctionPtr>(consumerThread)
                 , reinterpret_cast<void *>(i + 1));

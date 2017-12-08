@@ -106,6 +106,7 @@ Semaphore::V()
 Lock::Lock(char* debugName) {
     name = debugName;
     waitList = new List<Thread*>;
+    status = FREE;
 }
 Lock::~Lock() {
     delete waitList;
