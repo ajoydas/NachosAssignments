@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = F:\InstalledProgram\apps\CLion\ch-0\173.3727.114\bin\cmake\bin\cmake.exe
+CMAKE_COMMAND = F:\InstalledProgram\apps\CLion\ch-0\173.4127.32\bin\cmake\bin\cmake.exe
 
 # The command to remove a file.
-RM = F:\InstalledProgram\apps\CLion\ch-0\173.3727.114\bin\cmake\bin\cmake.exe -E remove -f
+RM = F:\InstalledProgram\apps\CLion\ch-0\173.4127.32\bin\cmake\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code
+CMAKE_SOURCE_DIR = "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug
+CMAKE_BINARY_DIR = "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-bui
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	F:\InstalledProgram\apps\CLion\ch-0\173.3727.114\bin\cmake\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	F:\InstalledProgram\apps\CLion\ch-0\173.4127.32\bin\cmake\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	F:\InstalledProgram\apps\CLion\ch-0\173.3727.114\bin\cmake\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	F:\InstalledProgram\apps\CLion\ch-0\173.4127.32\bin\cmake\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

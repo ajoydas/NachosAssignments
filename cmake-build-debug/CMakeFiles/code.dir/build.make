@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = F:\InstalledProgram\apps\CLion\ch-0\173.3727.114\bin\cmake\bin\cmake.exe
+CMAKE_COMMAND = F:\InstalledProgram\apps\CLion\ch-0\173.4127.32\bin\cmake\bin\cmake.exe
 
 # The command to remove a file.
-RM = F:\InstalledProgram\apps\CLion\ch-0\173.3727.114\bin\cmake\bin\cmake.exe -E remove -f
+RM = F:\InstalledProgram\apps\CLion\ch-0\173.4127.32\bin\cmake\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code
+CMAKE_SOURCE_DIR = "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug
+CMAKE_BINARY_DIR = "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/code.dir/depend.make
@@ -58,16 +58,16 @@ include CMakeFiles/code.dir/flags.make
 
 CMakeFiles/code.dir/bin/coff2flat.c.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/bin/coff2flat.c.obj: ../bin/coff2flat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/code.dir/bin/coff2flat.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\coff2flat.c.obj   -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\coff2flat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/code.dir/bin/coff2flat.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\coff2flat.c.obj   -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\coff2flat.c"
 
 CMakeFiles/code.dir/bin/coff2flat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.dir/bin/coff2flat.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\coff2flat.c > CMakeFiles\code.dir\bin\coff2flat.c.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\coff2flat.c" > CMakeFiles\code.dir\bin\coff2flat.c.i
 
 CMakeFiles/code.dir/bin/coff2flat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.dir/bin/coff2flat.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\coff2flat.c -o CMakeFiles\code.dir\bin\coff2flat.c.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\coff2flat.c" -o CMakeFiles\code.dir\bin\coff2flat.c.s
 
 CMakeFiles/code.dir/bin/coff2flat.c.obj.requires:
 
@@ -82,16 +82,16 @@ CMakeFiles/code.dir/bin/coff2flat.c.obj.provides.build: CMakeFiles/code.dir/bin/
 
 CMakeFiles/code.dir/bin/coff2noff.c.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/bin/coff2noff.c.obj: ../bin/coff2noff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/code.dir/bin/coff2noff.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\coff2noff.c.obj   -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\coff2noff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/code.dir/bin/coff2noff.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\coff2noff.c.obj   -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\coff2noff.c"
 
 CMakeFiles/code.dir/bin/coff2noff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.dir/bin/coff2noff.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\coff2noff.c > CMakeFiles\code.dir\bin\coff2noff.c.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\coff2noff.c" > CMakeFiles\code.dir\bin\coff2noff.c.i
 
 CMakeFiles/code.dir/bin/coff2noff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.dir/bin/coff2noff.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\coff2noff.c -o CMakeFiles\code.dir\bin\coff2noff.c.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\coff2noff.c" -o CMakeFiles\code.dir\bin\coff2noff.c.s
 
 CMakeFiles/code.dir/bin/coff2noff.c.obj.requires:
 
@@ -106,16 +106,16 @@ CMakeFiles/code.dir/bin/coff2noff.c.obj.provides.build: CMakeFiles/code.dir/bin/
 
 CMakeFiles/code.dir/bin/d.c.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/bin/d.c.obj: ../bin/d.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/code.dir/bin/d.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\d.c.obj   -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\d.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/code.dir/bin/d.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\d.c.obj   -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\d.c"
 
 CMakeFiles/code.dir/bin/d.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.dir/bin/d.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\d.c > CMakeFiles\code.dir\bin\d.c.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\d.c" > CMakeFiles\code.dir\bin\d.c.i
 
 CMakeFiles/code.dir/bin/d.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.dir/bin/d.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\d.c -o CMakeFiles\code.dir\bin\d.c.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\d.c" -o CMakeFiles\code.dir\bin\d.c.s
 
 CMakeFiles/code.dir/bin/d.c.obj.requires:
 
@@ -130,16 +130,16 @@ CMakeFiles/code.dir/bin/d.c.obj.provides.build: CMakeFiles/code.dir/bin/d.c.obj
 
 CMakeFiles/code.dir/bin/disasm.c.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/bin/disasm.c.obj: ../bin/disasm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/code.dir/bin/disasm.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\disasm.c.obj   -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\disasm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/code.dir/bin/disasm.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\disasm.c.obj   -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\disasm.c"
 
 CMakeFiles/code.dir/bin/disasm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.dir/bin/disasm.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\disasm.c > CMakeFiles\code.dir\bin\disasm.c.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\disasm.c" > CMakeFiles\code.dir\bin\disasm.c.i
 
 CMakeFiles/code.dir/bin/disasm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.dir/bin/disasm.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\disasm.c -o CMakeFiles\code.dir\bin\disasm.c.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\disasm.c" -o CMakeFiles\code.dir\bin\disasm.c.s
 
 CMakeFiles/code.dir/bin/disasm.c.obj.requires:
 
@@ -154,16 +154,16 @@ CMakeFiles/code.dir/bin/disasm.c.obj.provides.build: CMakeFiles/code.dir/bin/dis
 
 CMakeFiles/code.dir/bin/execute.c.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/bin/execute.c.obj: ../bin/execute.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/code.dir/bin/execute.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\execute.c.obj   -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\execute.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/code.dir/bin/execute.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\execute.c.obj   -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\execute.c"
 
 CMakeFiles/code.dir/bin/execute.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.dir/bin/execute.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\execute.c > CMakeFiles\code.dir\bin\execute.c.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\execute.c" > CMakeFiles\code.dir\bin\execute.c.i
 
 CMakeFiles/code.dir/bin/execute.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.dir/bin/execute.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\execute.c -o CMakeFiles\code.dir\bin\execute.c.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\execute.c" -o CMakeFiles\code.dir\bin\execute.c.s
 
 CMakeFiles/code.dir/bin/execute.c.obj.requires:
 
@@ -178,16 +178,16 @@ CMakeFiles/code.dir/bin/execute.c.obj.provides.build: CMakeFiles/code.dir/bin/ex
 
 CMakeFiles/code.dir/bin/main.c.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/bin/main.c.obj: ../bin/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/code.dir/bin/main.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\main.c.obj   -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/code.dir/bin/main.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\main.c.obj   -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\main.c"
 
 CMakeFiles/code.dir/bin/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.dir/bin/main.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\main.c > CMakeFiles\code.dir\bin\main.c.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\main.c" > CMakeFiles\code.dir\bin\main.c.i
 
 CMakeFiles/code.dir/bin/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.dir/bin/main.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\main.c -o CMakeFiles\code.dir\bin\main.c.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\main.c" -o CMakeFiles\code.dir\bin\main.c.s
 
 CMakeFiles/code.dir/bin/main.c.obj.requires:
 
@@ -202,16 +202,16 @@ CMakeFiles/code.dir/bin/main.c.obj.provides.build: CMakeFiles/code.dir/bin/main.
 
 CMakeFiles/code.dir/bin/opstrings.c.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/bin/opstrings.c.obj: ../bin/opstrings.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/code.dir/bin/opstrings.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\opstrings.c.obj   -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\opstrings.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/code.dir/bin/opstrings.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\opstrings.c.obj   -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\opstrings.c"
 
 CMakeFiles/code.dir/bin/opstrings.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.dir/bin/opstrings.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\opstrings.c > CMakeFiles\code.dir\bin\opstrings.c.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\opstrings.c" > CMakeFiles\code.dir\bin\opstrings.c.i
 
 CMakeFiles/code.dir/bin/opstrings.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.dir/bin/opstrings.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\opstrings.c -o CMakeFiles\code.dir\bin\opstrings.c.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\opstrings.c" -o CMakeFiles\code.dir\bin\opstrings.c.s
 
 CMakeFiles/code.dir/bin/opstrings.c.obj.requires:
 
@@ -226,16 +226,16 @@ CMakeFiles/code.dir/bin/opstrings.c.obj.provides.build: CMakeFiles/code.dir/bin/
 
 CMakeFiles/code.dir/bin/out.c.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/bin/out.c.obj: ../bin/out.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/code.dir/bin/out.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\out.c.obj   -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\out.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/code.dir/bin/out.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\out.c.obj   -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\out.c"
 
 CMakeFiles/code.dir/bin/out.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.dir/bin/out.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\out.c > CMakeFiles\code.dir\bin\out.c.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\out.c" > CMakeFiles\code.dir\bin\out.c.i
 
 CMakeFiles/code.dir/bin/out.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.dir/bin/out.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\out.c -o CMakeFiles\code.dir\bin\out.c.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\out.c" -o CMakeFiles\code.dir\bin\out.c.s
 
 CMakeFiles/code.dir/bin/out.c.obj.requires:
 
@@ -250,16 +250,16 @@ CMakeFiles/code.dir/bin/out.c.obj.provides.build: CMakeFiles/code.dir/bin/out.c.
 
 CMakeFiles/code.dir/bin/system.c.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/bin/system.c.obj: ../bin/system.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/code.dir/bin/system.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\system.c.obj   -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\system.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/code.dir/bin/system.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\bin\system.c.obj   -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\system.c"
 
 CMakeFiles/code.dir/bin/system.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.dir/bin/system.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\system.c > CMakeFiles\code.dir\bin\system.c.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\system.c" > CMakeFiles\code.dir\bin\system.c.i
 
 CMakeFiles/code.dir/bin/system.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.dir/bin/system.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\bin\system.c -o CMakeFiles\code.dir\bin\system.c.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\bin\system.c" -o CMakeFiles\code.dir\bin\system.c.s
 
 CMakeFiles/code.dir/bin/system.c.obj.requires:
 
@@ -274,16 +274,16 @@ CMakeFiles/code.dir/bin/system.c.obj.provides.build: CMakeFiles/code.dir/bin/sys
 
 CMakeFiles/code.dir/filesys/directory.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/filesys/directory.cc.obj: ../filesys/directory.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/code.dir/filesys/directory.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\filesys\directory.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\directory.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/code.dir/filesys/directory.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\filesys\directory.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\directory.cc"
 
 CMakeFiles/code.dir/filesys/directory.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/filesys/directory.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\directory.cc > CMakeFiles\code.dir\filesys\directory.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\directory.cc" > CMakeFiles\code.dir\filesys\directory.cc.i
 
 CMakeFiles/code.dir/filesys/directory.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/filesys/directory.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\directory.cc -o CMakeFiles\code.dir\filesys\directory.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\directory.cc" -o CMakeFiles\code.dir\filesys\directory.cc.s
 
 CMakeFiles/code.dir/filesys/directory.cc.obj.requires:
 
@@ -298,16 +298,16 @@ CMakeFiles/code.dir/filesys/directory.cc.obj.provides.build: CMakeFiles/code.dir
 
 CMakeFiles/code.dir/filesys/filehdr.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/filesys/filehdr.cc.obj: ../filesys/filehdr.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/code.dir/filesys/filehdr.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\filesys\filehdr.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\filehdr.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/code.dir/filesys/filehdr.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\filesys\filehdr.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\filehdr.cc"
 
 CMakeFiles/code.dir/filesys/filehdr.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/filesys/filehdr.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\filehdr.cc > CMakeFiles\code.dir\filesys\filehdr.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\filehdr.cc" > CMakeFiles\code.dir\filesys\filehdr.cc.i
 
 CMakeFiles/code.dir/filesys/filehdr.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/filesys/filehdr.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\filehdr.cc -o CMakeFiles\code.dir\filesys\filehdr.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\filehdr.cc" -o CMakeFiles\code.dir\filesys\filehdr.cc.s
 
 CMakeFiles/code.dir/filesys/filehdr.cc.obj.requires:
 
@@ -322,16 +322,16 @@ CMakeFiles/code.dir/filesys/filehdr.cc.obj.provides.build: CMakeFiles/code.dir/f
 
 CMakeFiles/code.dir/filesys/filesys.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/filesys/filesys.cc.obj: ../filesys/filesys.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/code.dir/filesys/filesys.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\filesys\filesys.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\filesys.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/code.dir/filesys/filesys.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\filesys\filesys.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\filesys.cc"
 
 CMakeFiles/code.dir/filesys/filesys.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/filesys/filesys.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\filesys.cc > CMakeFiles\code.dir\filesys\filesys.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\filesys.cc" > CMakeFiles\code.dir\filesys\filesys.cc.i
 
 CMakeFiles/code.dir/filesys/filesys.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/filesys/filesys.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\filesys.cc -o CMakeFiles\code.dir\filesys\filesys.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\filesys.cc" -o CMakeFiles\code.dir\filesys\filesys.cc.s
 
 CMakeFiles/code.dir/filesys/filesys.cc.obj.requires:
 
@@ -346,16 +346,16 @@ CMakeFiles/code.dir/filesys/filesys.cc.obj.provides.build: CMakeFiles/code.dir/f
 
 CMakeFiles/code.dir/filesys/fstest.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/filesys/fstest.cc.obj: ../filesys/fstest.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/code.dir/filesys/fstest.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\filesys\fstest.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\fstest.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/code.dir/filesys/fstest.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\filesys\fstest.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\fstest.cc"
 
 CMakeFiles/code.dir/filesys/fstest.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/filesys/fstest.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\fstest.cc > CMakeFiles\code.dir\filesys\fstest.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\fstest.cc" > CMakeFiles\code.dir\filesys\fstest.cc.i
 
 CMakeFiles/code.dir/filesys/fstest.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/filesys/fstest.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\fstest.cc -o CMakeFiles\code.dir\filesys\fstest.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\fstest.cc" -o CMakeFiles\code.dir\filesys\fstest.cc.s
 
 CMakeFiles/code.dir/filesys/fstest.cc.obj.requires:
 
@@ -370,16 +370,16 @@ CMakeFiles/code.dir/filesys/fstest.cc.obj.provides.build: CMakeFiles/code.dir/fi
 
 CMakeFiles/code.dir/filesys/openfile.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/filesys/openfile.cc.obj: ../filesys/openfile.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/code.dir/filesys/openfile.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\filesys\openfile.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\openfile.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/code.dir/filesys/openfile.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\filesys\openfile.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\openfile.cc"
 
 CMakeFiles/code.dir/filesys/openfile.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/filesys/openfile.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\openfile.cc > CMakeFiles\code.dir\filesys\openfile.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\openfile.cc" > CMakeFiles\code.dir\filesys\openfile.cc.i
 
 CMakeFiles/code.dir/filesys/openfile.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/filesys/openfile.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\openfile.cc -o CMakeFiles\code.dir\filesys\openfile.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\openfile.cc" -o CMakeFiles\code.dir\filesys\openfile.cc.s
 
 CMakeFiles/code.dir/filesys/openfile.cc.obj.requires:
 
@@ -394,16 +394,16 @@ CMakeFiles/code.dir/filesys/openfile.cc.obj.provides.build: CMakeFiles/code.dir/
 
 CMakeFiles/code.dir/filesys/synchdisk.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/filesys/synchdisk.cc.obj: ../filesys/synchdisk.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/code.dir/filesys/synchdisk.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\filesys\synchdisk.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\synchdisk.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/code.dir/filesys/synchdisk.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\filesys\synchdisk.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\synchdisk.cc"
 
 CMakeFiles/code.dir/filesys/synchdisk.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/filesys/synchdisk.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\synchdisk.cc > CMakeFiles\code.dir\filesys\synchdisk.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\synchdisk.cc" > CMakeFiles\code.dir\filesys\synchdisk.cc.i
 
 CMakeFiles/code.dir/filesys/synchdisk.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/filesys/synchdisk.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\filesys\synchdisk.cc -o CMakeFiles\code.dir\filesys\synchdisk.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\filesys\synchdisk.cc" -o CMakeFiles\code.dir\filesys\synchdisk.cc.s
 
 CMakeFiles/code.dir/filesys/synchdisk.cc.obj.requires:
 
@@ -418,16 +418,16 @@ CMakeFiles/code.dir/filesys/synchdisk.cc.obj.provides.build: CMakeFiles/code.dir
 
 CMakeFiles/code.dir/machine/console.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/machine/console.cc.obj: ../machine/console.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/code.dir/machine/console.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\console.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\console.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/code.dir/machine/console.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\console.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\console.cc"
 
 CMakeFiles/code.dir/machine/console.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/machine/console.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\console.cc > CMakeFiles\code.dir\machine\console.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\console.cc" > CMakeFiles\code.dir\machine\console.cc.i
 
 CMakeFiles/code.dir/machine/console.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/machine/console.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\console.cc -o CMakeFiles\code.dir\machine\console.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\console.cc" -o CMakeFiles\code.dir\machine\console.cc.s
 
 CMakeFiles/code.dir/machine/console.cc.obj.requires:
 
@@ -442,16 +442,16 @@ CMakeFiles/code.dir/machine/console.cc.obj.provides.build: CMakeFiles/code.dir/m
 
 CMakeFiles/code.dir/machine/disk.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/machine/disk.cc.obj: ../machine/disk.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/code.dir/machine/disk.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\disk.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\disk.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/code.dir/machine/disk.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\disk.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\disk.cc"
 
 CMakeFiles/code.dir/machine/disk.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/machine/disk.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\disk.cc > CMakeFiles\code.dir\machine\disk.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\disk.cc" > CMakeFiles\code.dir\machine\disk.cc.i
 
 CMakeFiles/code.dir/machine/disk.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/machine/disk.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\disk.cc -o CMakeFiles\code.dir\machine\disk.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\disk.cc" -o CMakeFiles\code.dir\machine\disk.cc.s
 
 CMakeFiles/code.dir/machine/disk.cc.obj.requires:
 
@@ -466,16 +466,16 @@ CMakeFiles/code.dir/machine/disk.cc.obj.provides.build: CMakeFiles/code.dir/mach
 
 CMakeFiles/code.dir/machine/interrupt.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/machine/interrupt.cc.obj: ../machine/interrupt.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/code.dir/machine/interrupt.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\interrupt.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\interrupt.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/code.dir/machine/interrupt.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\interrupt.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\interrupt.cc"
 
 CMakeFiles/code.dir/machine/interrupt.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/machine/interrupt.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\interrupt.cc > CMakeFiles\code.dir\machine\interrupt.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\interrupt.cc" > CMakeFiles\code.dir\machine\interrupt.cc.i
 
 CMakeFiles/code.dir/machine/interrupt.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/machine/interrupt.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\interrupt.cc -o CMakeFiles\code.dir\machine\interrupt.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\interrupt.cc" -o CMakeFiles\code.dir\machine\interrupt.cc.s
 
 CMakeFiles/code.dir/machine/interrupt.cc.obj.requires:
 
@@ -490,16 +490,16 @@ CMakeFiles/code.dir/machine/interrupt.cc.obj.provides.build: CMakeFiles/code.dir
 
 CMakeFiles/code.dir/machine/machine.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/machine/machine.cc.obj: ../machine/machine.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/code.dir/machine/machine.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\machine.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\machine.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/code.dir/machine/machine.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\machine.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\machine.cc"
 
 CMakeFiles/code.dir/machine/machine.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/machine/machine.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\machine.cc > CMakeFiles\code.dir\machine\machine.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\machine.cc" > CMakeFiles\code.dir\machine\machine.cc.i
 
 CMakeFiles/code.dir/machine/machine.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/machine/machine.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\machine.cc -o CMakeFiles\code.dir\machine\machine.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\machine.cc" -o CMakeFiles\code.dir\machine\machine.cc.s
 
 CMakeFiles/code.dir/machine/machine.cc.obj.requires:
 
@@ -514,16 +514,16 @@ CMakeFiles/code.dir/machine/machine.cc.obj.provides.build: CMakeFiles/code.dir/m
 
 CMakeFiles/code.dir/machine/mipssim.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/machine/mipssim.cc.obj: ../machine/mipssim.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/code.dir/machine/mipssim.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\mipssim.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\mipssim.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/code.dir/machine/mipssim.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\mipssim.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\mipssim.cc"
 
 CMakeFiles/code.dir/machine/mipssim.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/machine/mipssim.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\mipssim.cc > CMakeFiles\code.dir\machine\mipssim.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\mipssim.cc" > CMakeFiles\code.dir\machine\mipssim.cc.i
 
 CMakeFiles/code.dir/machine/mipssim.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/machine/mipssim.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\mipssim.cc -o CMakeFiles\code.dir\machine\mipssim.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\mipssim.cc" -o CMakeFiles\code.dir\machine\mipssim.cc.s
 
 CMakeFiles/code.dir/machine/mipssim.cc.obj.requires:
 
@@ -538,16 +538,16 @@ CMakeFiles/code.dir/machine/mipssim.cc.obj.provides.build: CMakeFiles/code.dir/m
 
 CMakeFiles/code.dir/machine/network.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/machine/network.cc.obj: ../machine/network.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/code.dir/machine/network.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\network.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\network.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/code.dir/machine/network.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\network.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\network.cc"
 
 CMakeFiles/code.dir/machine/network.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/machine/network.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\network.cc > CMakeFiles\code.dir\machine\network.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\network.cc" > CMakeFiles\code.dir\machine\network.cc.i
 
 CMakeFiles/code.dir/machine/network.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/machine/network.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\network.cc -o CMakeFiles\code.dir\machine\network.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\network.cc" -o CMakeFiles\code.dir\machine\network.cc.s
 
 CMakeFiles/code.dir/machine/network.cc.obj.requires:
 
@@ -562,16 +562,16 @@ CMakeFiles/code.dir/machine/network.cc.obj.provides.build: CMakeFiles/code.dir/m
 
 CMakeFiles/code.dir/machine/stats.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/machine/stats.cc.obj: ../machine/stats.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/code.dir/machine/stats.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\stats.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\stats.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/code.dir/machine/stats.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\stats.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\stats.cc"
 
 CMakeFiles/code.dir/machine/stats.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/machine/stats.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\stats.cc > CMakeFiles\code.dir\machine\stats.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\stats.cc" > CMakeFiles\code.dir\machine\stats.cc.i
 
 CMakeFiles/code.dir/machine/stats.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/machine/stats.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\stats.cc -o CMakeFiles\code.dir\machine\stats.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\stats.cc" -o CMakeFiles\code.dir\machine\stats.cc.s
 
 CMakeFiles/code.dir/machine/stats.cc.obj.requires:
 
@@ -586,16 +586,16 @@ CMakeFiles/code.dir/machine/stats.cc.obj.provides.build: CMakeFiles/code.dir/mac
 
 CMakeFiles/code.dir/machine/sysdep.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/machine/sysdep.cc.obj: ../machine/sysdep.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/code.dir/machine/sysdep.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\sysdep.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\sysdep.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/code.dir/machine/sysdep.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\sysdep.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\sysdep.cc"
 
 CMakeFiles/code.dir/machine/sysdep.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/machine/sysdep.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\sysdep.cc > CMakeFiles\code.dir\machine\sysdep.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\sysdep.cc" > CMakeFiles\code.dir\machine\sysdep.cc.i
 
 CMakeFiles/code.dir/machine/sysdep.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/machine/sysdep.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\sysdep.cc -o CMakeFiles\code.dir\machine\sysdep.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\sysdep.cc" -o CMakeFiles\code.dir\machine\sysdep.cc.s
 
 CMakeFiles/code.dir/machine/sysdep.cc.obj.requires:
 
@@ -610,16 +610,16 @@ CMakeFiles/code.dir/machine/sysdep.cc.obj.provides.build: CMakeFiles/code.dir/ma
 
 CMakeFiles/code.dir/machine/timer.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/machine/timer.cc.obj: ../machine/timer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/code.dir/machine/timer.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\timer.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\timer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/code.dir/machine/timer.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\timer.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\timer.cc"
 
 CMakeFiles/code.dir/machine/timer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/machine/timer.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\timer.cc > CMakeFiles\code.dir\machine\timer.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\timer.cc" > CMakeFiles\code.dir\machine\timer.cc.i
 
 CMakeFiles/code.dir/machine/timer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/machine/timer.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\timer.cc -o CMakeFiles\code.dir\machine\timer.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\timer.cc" -o CMakeFiles\code.dir\machine\timer.cc.s
 
 CMakeFiles/code.dir/machine/timer.cc.obj.requires:
 
@@ -634,16 +634,16 @@ CMakeFiles/code.dir/machine/timer.cc.obj.provides.build: CMakeFiles/code.dir/mac
 
 CMakeFiles/code.dir/machine/translate.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/machine/translate.cc.obj: ../machine/translate.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/code.dir/machine/translate.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\translate.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\translate.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/code.dir/machine/translate.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\machine\translate.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\translate.cc"
 
 CMakeFiles/code.dir/machine/translate.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/machine/translate.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\translate.cc > CMakeFiles\code.dir\machine\translate.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\translate.cc" > CMakeFiles\code.dir\machine\translate.cc.i
 
 CMakeFiles/code.dir/machine/translate.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/machine/translate.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\machine\translate.cc -o CMakeFiles\code.dir\machine\translate.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\machine\translate.cc" -o CMakeFiles\code.dir\machine\translate.cc.s
 
 CMakeFiles/code.dir/machine/translate.cc.obj.requires:
 
@@ -658,16 +658,16 @@ CMakeFiles/code.dir/machine/translate.cc.obj.provides.build: CMakeFiles/code.dir
 
 CMakeFiles/code.dir/network/nettest.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/network/nettest.cc.obj: ../network/nettest.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/code.dir/network/nettest.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\network\nettest.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\network\nettest.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/code.dir/network/nettest.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\network\nettest.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\network\nettest.cc"
 
 CMakeFiles/code.dir/network/nettest.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/network/nettest.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\network\nettest.cc > CMakeFiles\code.dir\network\nettest.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\network\nettest.cc" > CMakeFiles\code.dir\network\nettest.cc.i
 
 CMakeFiles/code.dir/network/nettest.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/network/nettest.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\network\nettest.cc -o CMakeFiles\code.dir\network\nettest.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\network\nettest.cc" -o CMakeFiles\code.dir\network\nettest.cc.s
 
 CMakeFiles/code.dir/network/nettest.cc.obj.requires:
 
@@ -682,16 +682,16 @@ CMakeFiles/code.dir/network/nettest.cc.obj.provides.build: CMakeFiles/code.dir/n
 
 CMakeFiles/code.dir/network/post.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/network/post.cc.obj: ../network/post.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/code.dir/network/post.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\network\post.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\network\post.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/code.dir/network/post.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\network\post.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\network\post.cc"
 
 CMakeFiles/code.dir/network/post.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/network/post.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\network\post.cc > CMakeFiles\code.dir\network\post.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\network\post.cc" > CMakeFiles\code.dir\network\post.cc.i
 
 CMakeFiles/code.dir/network/post.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/network/post.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\network\post.cc -o CMakeFiles\code.dir\network\post.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\network\post.cc" -o CMakeFiles\code.dir\network\post.cc.s
 
 CMakeFiles/code.dir/network/post.cc.obj.requires:
 
@@ -706,16 +706,16 @@ CMakeFiles/code.dir/network/post.cc.obj.provides.build: CMakeFiles/code.dir/netw
 
 CMakeFiles/code.dir/test/halt.c.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/test/halt.c.obj: ../test/halt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/code.dir/test/halt.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\test\halt.c.obj   -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\test\halt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/code.dir/test/halt.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\test\halt.c.obj   -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\test\halt.c"
 
 CMakeFiles/code.dir/test/halt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.dir/test/halt.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\test\halt.c > CMakeFiles\code.dir\test\halt.c.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\test\halt.c" > CMakeFiles\code.dir\test\halt.c.i
 
 CMakeFiles/code.dir/test/halt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.dir/test/halt.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\test\halt.c -o CMakeFiles\code.dir\test\halt.c.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\test\halt.c" -o CMakeFiles\code.dir\test\halt.c.s
 
 CMakeFiles/code.dir/test/halt.c.obj.requires:
 
@@ -730,16 +730,16 @@ CMakeFiles/code.dir/test/halt.c.obj.provides.build: CMakeFiles/code.dir/test/hal
 
 CMakeFiles/code.dir/test/matmult.c.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/test/matmult.c.obj: ../test/matmult.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/code.dir/test/matmult.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\test\matmult.c.obj   -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\test\matmult.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/code.dir/test/matmult.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\test\matmult.c.obj   -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\test\matmult.c"
 
 CMakeFiles/code.dir/test/matmult.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.dir/test/matmult.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\test\matmult.c > CMakeFiles\code.dir\test\matmult.c.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\test\matmult.c" > CMakeFiles\code.dir\test\matmult.c.i
 
 CMakeFiles/code.dir/test/matmult.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.dir/test/matmult.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\test\matmult.c -o CMakeFiles\code.dir\test\matmult.c.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\test\matmult.c" -o CMakeFiles\code.dir\test\matmult.c.s
 
 CMakeFiles/code.dir/test/matmult.c.obj.requires:
 
@@ -754,16 +754,16 @@ CMakeFiles/code.dir/test/matmult.c.obj.provides.build: CMakeFiles/code.dir/test/
 
 CMakeFiles/code.dir/test/shell.c.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/test/shell.c.obj: ../test/shell.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/code.dir/test/shell.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\test\shell.c.obj   -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\test\shell.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/code.dir/test/shell.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\test\shell.c.obj   -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\test\shell.c"
 
 CMakeFiles/code.dir/test/shell.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.dir/test/shell.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\test\shell.c > CMakeFiles\code.dir\test\shell.c.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\test\shell.c" > CMakeFiles\code.dir\test\shell.c.i
 
 CMakeFiles/code.dir/test/shell.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.dir/test/shell.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\test\shell.c -o CMakeFiles\code.dir\test\shell.c.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\test\shell.c" -o CMakeFiles\code.dir\test\shell.c.s
 
 CMakeFiles/code.dir/test/shell.c.obj.requires:
 
@@ -778,16 +778,16 @@ CMakeFiles/code.dir/test/shell.c.obj.provides.build: CMakeFiles/code.dir/test/sh
 
 CMakeFiles/code.dir/test/sort.c.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/test/sort.c.obj: ../test/sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/code.dir/test/sort.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\test\sort.c.obj   -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\test\sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/code.dir/test/sort.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\code.dir\test\sort.c.obj   -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\test\sort.c"
 
 CMakeFiles/code.dir/test/sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.dir/test/sort.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\test\sort.c > CMakeFiles\code.dir\test\sort.c.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\test\sort.c" > CMakeFiles\code.dir\test\sort.c.i
 
 CMakeFiles/code.dir/test/sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.dir/test/sort.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\test\sort.c -o CMakeFiles\code.dir\test\sort.c.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\test\sort.c" -o CMakeFiles\code.dir\test\sort.c.s
 
 CMakeFiles/code.dir/test/sort.c.obj.requires:
 
@@ -802,16 +802,16 @@ CMakeFiles/code.dir/test/sort.c.obj.provides.build: CMakeFiles/code.dir/test/sor
 
 CMakeFiles/code.dir/threads/main.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/threads/main.cc.obj: ../threads/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/code.dir/threads/main.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\main.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/code.dir/threads/main.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\main.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\main.cc"
 
 CMakeFiles/code.dir/threads/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/threads/main.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\main.cc > CMakeFiles\code.dir\threads\main.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\main.cc" > CMakeFiles\code.dir\threads\main.cc.i
 
 CMakeFiles/code.dir/threads/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/threads/main.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\main.cc -o CMakeFiles\code.dir\threads\main.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\main.cc" -o CMakeFiles\code.dir\threads\main.cc.s
 
 CMakeFiles/code.dir/threads/main.cc.obj.requires:
 
@@ -826,16 +826,16 @@ CMakeFiles/code.dir/threads/main.cc.obj.provides.build: CMakeFiles/code.dir/thre
 
 CMakeFiles/code.dir/threads/preemptive.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/threads/preemptive.cc.obj: ../threads/preemptive.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/code.dir/threads/preemptive.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\preemptive.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\preemptive.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/code.dir/threads/preemptive.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\preemptive.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\preemptive.cc"
 
 CMakeFiles/code.dir/threads/preemptive.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/threads/preemptive.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\preemptive.cc > CMakeFiles\code.dir\threads\preemptive.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\preemptive.cc" > CMakeFiles\code.dir\threads\preemptive.cc.i
 
 CMakeFiles/code.dir/threads/preemptive.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/threads/preemptive.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\preemptive.cc -o CMakeFiles\code.dir\threads\preemptive.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\preemptive.cc" -o CMakeFiles\code.dir\threads\preemptive.cc.s
 
 CMakeFiles/code.dir/threads/preemptive.cc.obj.requires:
 
@@ -850,16 +850,16 @@ CMakeFiles/code.dir/threads/preemptive.cc.obj.provides.build: CMakeFiles/code.di
 
 CMakeFiles/code.dir/threads/scheduler.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/threads/scheduler.cc.obj: ../threads/scheduler.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/code.dir/threads/scheduler.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\scheduler.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\scheduler.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/code.dir/threads/scheduler.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\scheduler.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\scheduler.cc"
 
 CMakeFiles/code.dir/threads/scheduler.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/threads/scheduler.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\scheduler.cc > CMakeFiles\code.dir\threads\scheduler.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\scheduler.cc" > CMakeFiles\code.dir\threads\scheduler.cc.i
 
 CMakeFiles/code.dir/threads/scheduler.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/threads/scheduler.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\scheduler.cc -o CMakeFiles\code.dir\threads\scheduler.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\scheduler.cc" -o CMakeFiles\code.dir\threads\scheduler.cc.s
 
 CMakeFiles/code.dir/threads/scheduler.cc.obj.requires:
 
@@ -874,16 +874,16 @@ CMakeFiles/code.dir/threads/scheduler.cc.obj.provides.build: CMakeFiles/code.dir
 
 CMakeFiles/code.dir/threads/synch.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/threads/synch.cc.obj: ../threads/synch.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/code.dir/threads/synch.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\synch.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\synch.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/code.dir/threads/synch.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\synch.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\synch.cc"
 
 CMakeFiles/code.dir/threads/synch.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/threads/synch.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\synch.cc > CMakeFiles\code.dir\threads\synch.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\synch.cc" > CMakeFiles\code.dir\threads\synch.cc.i
 
 CMakeFiles/code.dir/threads/synch.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/threads/synch.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\synch.cc -o CMakeFiles\code.dir\threads\synch.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\synch.cc" -o CMakeFiles\code.dir\threads\synch.cc.s
 
 CMakeFiles/code.dir/threads/synch.cc.obj.requires:
 
@@ -898,16 +898,16 @@ CMakeFiles/code.dir/threads/synch.cc.obj.provides.build: CMakeFiles/code.dir/thr
 
 CMakeFiles/code.dir/threads/system.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/threads/system.cc.obj: ../threads/system.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/code.dir/threads/system.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\system.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\system.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/code.dir/threads/system.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\system.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\system.cc"
 
 CMakeFiles/code.dir/threads/system.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/threads/system.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\system.cc > CMakeFiles\code.dir\threads\system.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\system.cc" > CMakeFiles\code.dir\threads\system.cc.i
 
 CMakeFiles/code.dir/threads/system.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/threads/system.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\system.cc -o CMakeFiles\code.dir\threads\system.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\system.cc" -o CMakeFiles\code.dir\threads\system.cc.s
 
 CMakeFiles/code.dir/threads/system.cc.obj.requires:
 
@@ -922,16 +922,16 @@ CMakeFiles/code.dir/threads/system.cc.obj.provides.build: CMakeFiles/code.dir/th
 
 CMakeFiles/code.dir/threads/thread.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/threads/thread.cc.obj: ../threads/thread.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/code.dir/threads/thread.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\thread.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\thread.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/code.dir/threads/thread.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\thread.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\thread.cc"
 
 CMakeFiles/code.dir/threads/thread.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/threads/thread.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\thread.cc > CMakeFiles\code.dir\threads\thread.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\thread.cc" > CMakeFiles\code.dir\threads\thread.cc.i
 
 CMakeFiles/code.dir/threads/thread.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/threads/thread.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\thread.cc -o CMakeFiles\code.dir\threads\thread.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\thread.cc" -o CMakeFiles\code.dir\threads\thread.cc.s
 
 CMakeFiles/code.dir/threads/thread.cc.obj.requires:
 
@@ -946,16 +946,16 @@ CMakeFiles/code.dir/threads/thread.cc.obj.provides.build: CMakeFiles/code.dir/th
 
 CMakeFiles/code.dir/threads/threadtest.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/threads/threadtest.cc.obj: ../threads/threadtest.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/code.dir/threads/threadtest.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\threadtest.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\threadtest.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/code.dir/threads/threadtest.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\threadtest.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\threadtest.cc"
 
 CMakeFiles/code.dir/threads/threadtest.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/threads/threadtest.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\threadtest.cc > CMakeFiles\code.dir\threads\threadtest.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\threadtest.cc" > CMakeFiles\code.dir\threads\threadtest.cc.i
 
 CMakeFiles/code.dir/threads/threadtest.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/threads/threadtest.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\threadtest.cc -o CMakeFiles\code.dir\threads\threadtest.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\threadtest.cc" -o CMakeFiles\code.dir\threads\threadtest.cc.s
 
 CMakeFiles/code.dir/threads/threadtest.cc.obj.requires:
 
@@ -970,16 +970,16 @@ CMakeFiles/code.dir/threads/threadtest.cc.obj.provides.build: CMakeFiles/code.di
 
 CMakeFiles/code.dir/threads/utility.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/threads/utility.cc.obj: ../threads/utility.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/code.dir/threads/utility.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\utility.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\utility.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/code.dir/threads/utility.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\threads\utility.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\utility.cc"
 
 CMakeFiles/code.dir/threads/utility.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/threads/utility.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\utility.cc > CMakeFiles\code.dir\threads\utility.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\utility.cc" > CMakeFiles\code.dir\threads\utility.cc.i
 
 CMakeFiles/code.dir/threads/utility.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/threads/utility.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\threads\utility.cc -o CMakeFiles\code.dir\threads\utility.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\threads\utility.cc" -o CMakeFiles\code.dir\threads\utility.cc.s
 
 CMakeFiles/code.dir/threads/utility.cc.obj.requires:
 
@@ -994,16 +994,16 @@ CMakeFiles/code.dir/threads/utility.cc.obj.provides.build: CMakeFiles/code.dir/t
 
 CMakeFiles/code.dir/userprog/addrspace.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/userprog/addrspace.cc.obj: ../userprog/addrspace.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/code.dir/userprog/addrspace.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\userprog\addrspace.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\userprog\addrspace.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/code.dir/userprog/addrspace.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\userprog\addrspace.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\addrspace.cc"
 
 CMakeFiles/code.dir/userprog/addrspace.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/userprog/addrspace.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\userprog\addrspace.cc > CMakeFiles\code.dir\userprog\addrspace.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\addrspace.cc" > CMakeFiles\code.dir\userprog\addrspace.cc.i
 
 CMakeFiles/code.dir/userprog/addrspace.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/userprog/addrspace.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\userprog\addrspace.cc -o CMakeFiles\code.dir\userprog\addrspace.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\addrspace.cc" -o CMakeFiles\code.dir\userprog\addrspace.cc.s
 
 CMakeFiles/code.dir/userprog/addrspace.cc.obj.requires:
 
@@ -1018,16 +1018,16 @@ CMakeFiles/code.dir/userprog/addrspace.cc.obj.provides.build: CMakeFiles/code.di
 
 CMakeFiles/code.dir/userprog/bitmap.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/userprog/bitmap.cc.obj: ../userprog/bitmap.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/code.dir/userprog/bitmap.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\userprog\bitmap.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\userprog\bitmap.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/code.dir/userprog/bitmap.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\userprog\bitmap.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\bitmap.cc"
 
 CMakeFiles/code.dir/userprog/bitmap.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/userprog/bitmap.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\userprog\bitmap.cc > CMakeFiles\code.dir\userprog\bitmap.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\bitmap.cc" > CMakeFiles\code.dir\userprog\bitmap.cc.i
 
 CMakeFiles/code.dir/userprog/bitmap.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/userprog/bitmap.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\userprog\bitmap.cc -o CMakeFiles\code.dir\userprog\bitmap.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\bitmap.cc" -o CMakeFiles\code.dir\userprog\bitmap.cc.s
 
 CMakeFiles/code.dir/userprog/bitmap.cc.obj.requires:
 
@@ -1042,16 +1042,16 @@ CMakeFiles/code.dir/userprog/bitmap.cc.obj.provides.build: CMakeFiles/code.dir/u
 
 CMakeFiles/code.dir/userprog/exception.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/userprog/exception.cc.obj: ../userprog/exception.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/code.dir/userprog/exception.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\userprog\exception.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\userprog\exception.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/code.dir/userprog/exception.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\userprog\exception.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\exception.cc"
 
 CMakeFiles/code.dir/userprog/exception.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/userprog/exception.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\userprog\exception.cc > CMakeFiles\code.dir\userprog\exception.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\exception.cc" > CMakeFiles\code.dir\userprog\exception.cc.i
 
 CMakeFiles/code.dir/userprog/exception.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/userprog/exception.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\userprog\exception.cc -o CMakeFiles\code.dir\userprog\exception.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\exception.cc" -o CMakeFiles\code.dir\userprog\exception.cc.s
 
 CMakeFiles/code.dir/userprog/exception.cc.obj.requires:
 
@@ -1066,16 +1066,16 @@ CMakeFiles/code.dir/userprog/exception.cc.obj.provides.build: CMakeFiles/code.di
 
 CMakeFiles/code.dir/userprog/progtest.cc.obj: CMakeFiles/code.dir/flags.make
 CMakeFiles/code.dir/userprog/progtest.cc.obj: ../userprog/progtest.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/code.dir/userprog/progtest.cc.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\userprog\progtest.cc.obj -c D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\userprog\progtest.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/code.dir/userprog/progtest.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\userprog\progtest.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\progtest.cc"
 
 CMakeFiles/code.dir/userprog/progtest.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/userprog/progtest.cc.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\userprog\progtest.cc > CMakeFiles\code.dir\userprog\progtest.cc.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\progtest.cc" > CMakeFiles\code.dir\userprog\progtest.cc.i
 
 CMakeFiles/code.dir/userprog/progtest.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/userprog/progtest.cc.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\userprog\progtest.cc -o CMakeFiles\code.dir\userprog\progtest.cc.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\progtest.cc" -o CMakeFiles\code.dir\userprog\progtest.cc.s
 
 CMakeFiles/code.dir/userprog/progtest.cc.obj.requires:
 
@@ -1184,7 +1184,7 @@ code.exe: CMakeFiles/code.dir/build.make
 code.exe: CMakeFiles/code.dir/linklibs.rsp
 code.exe: CMakeFiles/code.dir/objects1.rsp
 code.exe: CMakeFiles/code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX executable code.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX executable code.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\code.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1243,6 +1243,6 @@ CMakeFiles/code.dir/clean:
 .PHONY : CMakeFiles/code.dir/clean
 
 CMakeFiles/code.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug D:\Drive\L3-T2\OsSessional\nachos\nachos_64bit\code\cmake-build-debug\CMakeFiles\code.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code" "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code" "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug" "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug" "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles\code.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/code.dir/depend
 

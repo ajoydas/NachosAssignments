@@ -19,11 +19,12 @@ all:
 	cd network; $(MAKE) nachos 
 #   cd bin; make all
 	cd bin; make coff2noff
-#	cd test; make all
+	cd test; make all
 
 # don't delete executables in "test" in case there is no cross-compiler
 clean:
-	$(SH) -c "rm -f */{core,nachos,DISK,*.o,swtch.s} test/*.coff bin/{coff2flat,coff2noff,disassemble,out}"
+	$(SH) -c "rm -f */{core,nachos,DISK,swtch.s} bin/{coff2flat,coff2noff,disassemble,out,*.o} \
+	filesys/*.o machine/*.o network/*.o threads/*.o userprog/*.o vm/*.o"
 
 print:
 	$(SH) -c "$(LPR) Makefile* */Makefile"

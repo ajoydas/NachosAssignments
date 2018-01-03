@@ -1,4 +1,4 @@
-# Install script for directory: D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code
+# Install script for directory: D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Drive/L3-T2/OsSessional/nachos/nachos_64bit/code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

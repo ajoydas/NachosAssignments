@@ -12,16 +12,205 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56e38099-bc2b-480a-868e-8081e7f0b295" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/gnu-decstation-ultrix/decstation-ultrix/as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/gnu-decstation-ultrix/decstation-ultrix/cc1" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/gnu-decstation-ultrix/decstation-ultrix/cpp0" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/gnu-decstation-ultrix/decstation-ultrix/gcc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/gnu-decstation-ultrix/decstation-ultrix/ld" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/halt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/halt.coff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/halt.o" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/matmult" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/matmult.coff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/matmult.o" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/shell" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/shell.coff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/shell.o" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/sort" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/sort.coff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/sort.o" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/start.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/start.o" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/threads/consumer.cc" afterPath="$PROJECT_DIR$/threads/consumer.cc" />
+      <change beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change beforePath="$PROJECT_DIR$/bin/coff2noff (1).c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeCCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeCXXCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeRCCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeSystem.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/a.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/a.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile (1).cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2 (1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log (1).txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/C.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/CXX.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/DependInfo (1).cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/DependInfo.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/build (1).make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/build.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/cmake_clean (1).cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/depend (1).make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/depend.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/flags (1).make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/link.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/code.dir/progress (1).make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lib_name.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lib_name.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lib_name.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lib_name.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lib_name.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lib_name.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress (1).marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_makefile.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_makefile.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_makefile.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_makefile.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/code.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/code.cbp" />
+      <change beforePath="$PROJECT_DIR$/filesys/Makefile (1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/filesys/addrspace.o" afterPath="$PROJECT_DIR$/filesys/addrspace.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/bitmap.o" afterPath="$PROJECT_DIR$/filesys/bitmap.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/console.o" afterPath="$PROJECT_DIR$/filesys/console.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/consumer.o" afterPath="$PROJECT_DIR$/filesys/consumer.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/directory.o" afterPath="$PROJECT_DIR$/filesys/directory.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/disk.o" afterPath="$PROJECT_DIR$/filesys/disk.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/exception.o" afterPath="$PROJECT_DIR$/filesys/exception.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/filehdr.o" afterPath="$PROJECT_DIR$/filesys/filehdr.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/filesys.o" afterPath="$PROJECT_DIR$/filesys/filesys.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/fstest.o" afterPath="$PROJECT_DIR$/filesys/fstest.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/interrupt.o" afterPath="$PROJECT_DIR$/filesys/interrupt.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/machine.o" afterPath="$PROJECT_DIR$/filesys/machine.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/main.o" afterPath="$PROJECT_DIR$/filesys/main.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/mipssim.o" afterPath="$PROJECT_DIR$/filesys/mipssim.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/nachos" afterPath="$PROJECT_DIR$/filesys/nachos" />
+      <change beforePath="$PROJECT_DIR$/filesys/openfile.o" afterPath="$PROJECT_DIR$/filesys/openfile.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/preemptive.o" afterPath="$PROJECT_DIR$/filesys/preemptive.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/producer.o" afterPath="$PROJECT_DIR$/filesys/producer.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/progtest.o" afterPath="$PROJECT_DIR$/filesys/progtest.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/scheduler.o" afterPath="$PROJECT_DIR$/filesys/scheduler.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/stats.o" afterPath="$PROJECT_DIR$/filesys/stats.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/synch.o" afterPath="$PROJECT_DIR$/filesys/synch.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/synchdisk.o" afterPath="$PROJECT_DIR$/filesys/synchdisk.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/sysdep.o" afterPath="$PROJECT_DIR$/filesys/sysdep.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/system.o" afterPath="$PROJECT_DIR$/filesys/system.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/thread.o" afterPath="$PROJECT_DIR$/filesys/thread.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/threadtest.o" afterPath="$PROJECT_DIR$/filesys/threadtest.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/timer.o" afterPath="$PROJECT_DIR$/filesys/timer.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/translate.o" afterPath="$PROJECT_DIR$/filesys/translate.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/utility.o" afterPath="$PROJECT_DIR$/filesys/utility.o" />
+      <change beforePath="$PROJECT_DIR$/network/Makefile (1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/network/addrspace.o" afterPath="$PROJECT_DIR$/network/addrspace.o" />
+      <change beforePath="$PROJECT_DIR$/network/bitmap.o" afterPath="$PROJECT_DIR$/network/bitmap.o" />
+      <change beforePath="$PROJECT_DIR$/network/console.o" afterPath="$PROJECT_DIR$/network/console.o" />
+      <change beforePath="$PROJECT_DIR$/network/consumer.o" afterPath="$PROJECT_DIR$/network/consumer.o" />
+      <change beforePath="$PROJECT_DIR$/network/directory.o" afterPath="$PROJECT_DIR$/network/directory.o" />
+      <change beforePath="$PROJECT_DIR$/network/disk.o" afterPath="$PROJECT_DIR$/network/disk.o" />
+      <change beforePath="$PROJECT_DIR$/network/exception.o" afterPath="$PROJECT_DIR$/network/exception.o" />
+      <change beforePath="$PROJECT_DIR$/network/filehdr.o" afterPath="$PROJECT_DIR$/network/filehdr.o" />
+      <change beforePath="$PROJECT_DIR$/network/filesys.o" afterPath="$PROJECT_DIR$/network/filesys.o" />
+      <change beforePath="$PROJECT_DIR$/network/fstest.o" afterPath="$PROJECT_DIR$/network/fstest.o" />
+      <change beforePath="$PROJECT_DIR$/network/interrupt.o" afterPath="$PROJECT_DIR$/network/interrupt.o" />
+      <change beforePath="$PROJECT_DIR$/network/machine.o" afterPath="$PROJECT_DIR$/network/machine.o" />
+      <change beforePath="$PROJECT_DIR$/network/main.o" afterPath="$PROJECT_DIR$/network/main.o" />
+      <change beforePath="$PROJECT_DIR$/network/mipssim.o" afterPath="$PROJECT_DIR$/network/mipssim.o" />
+      <change beforePath="$PROJECT_DIR$/network/nachos" afterPath="$PROJECT_DIR$/network/nachos" />
+      <change beforePath="$PROJECT_DIR$/network/nettest.o" afterPath="$PROJECT_DIR$/network/nettest.o" />
+      <change beforePath="$PROJECT_DIR$/network/network.o" afterPath="$PROJECT_DIR$/network/network.o" />
+      <change beforePath="$PROJECT_DIR$/network/openfile.o" afterPath="$PROJECT_DIR$/network/openfile.o" />
+      <change beforePath="$PROJECT_DIR$/network/post.o" afterPath="$PROJECT_DIR$/network/post.o" />
+      <change beforePath="$PROJECT_DIR$/network/preemptive.o" afterPath="$PROJECT_DIR$/network/preemptive.o" />
+      <change beforePath="$PROJECT_DIR$/network/producer.o" afterPath="$PROJECT_DIR$/network/producer.o" />
+      <change beforePath="$PROJECT_DIR$/network/progtest.o" afterPath="$PROJECT_DIR$/network/progtest.o" />
+      <change beforePath="$PROJECT_DIR$/network/scheduler.o" afterPath="$PROJECT_DIR$/network/scheduler.o" />
+      <change beforePath="$PROJECT_DIR$/network/stats.o" afterPath="$PROJECT_DIR$/network/stats.o" />
+      <change beforePath="$PROJECT_DIR$/network/synch.o" afterPath="$PROJECT_DIR$/network/synch.o" />
+      <change beforePath="$PROJECT_DIR$/network/synchdisk.o" afterPath="$PROJECT_DIR$/network/synchdisk.o" />
+      <change beforePath="$PROJECT_DIR$/network/sysdep.o" afterPath="$PROJECT_DIR$/network/sysdep.o" />
+      <change beforePath="$PROJECT_DIR$/network/system.o" afterPath="$PROJECT_DIR$/network/system.o" />
+      <change beforePath="$PROJECT_DIR$/network/thread.o" afterPath="$PROJECT_DIR$/network/thread.o" />
+      <change beforePath="$PROJECT_DIR$/network/threadtest.o" afterPath="$PROJECT_DIR$/network/threadtest.o" />
+      <change beforePath="$PROJECT_DIR$/network/timer.o" afterPath="$PROJECT_DIR$/network/timer.o" />
+      <change beforePath="$PROJECT_DIR$/network/translate.o" afterPath="$PROJECT_DIR$/network/translate.o" />
+      <change beforePath="$PROJECT_DIR$/network/utility.o" afterPath="$PROJECT_DIR$/network/utility.o" />
+      <change beforePath="$PROJECT_DIR$/test/Makefile" afterPath="$PROJECT_DIR$/test/Makefile" />
+      <change beforePath="$PROJECT_DIR$/test/start.s" afterPath="$PROJECT_DIR$/test/start.s" />
       <change beforePath="$PROJECT_DIR$/threads/consumer.o" afterPath="$PROJECT_DIR$/threads/consumer.o" />
+      <change beforePath="$PROJECT_DIR$/threads/interrupt.o" afterPath="$PROJECT_DIR$/threads/interrupt.o" />
+      <change beforePath="$PROJECT_DIR$/threads/main.o" afterPath="$PROJECT_DIR$/threads/main.o" />
       <change beforePath="$PROJECT_DIR$/threads/nachos" afterPath="$PROJECT_DIR$/threads/nachos" />
-      <change beforePath="$PROJECT_DIR$/threads/producer.cc" afterPath="$PROJECT_DIR$/threads/producer.cc" />
+      <change beforePath="$PROJECT_DIR$/threads/preemptive.o" afterPath="$PROJECT_DIR$/threads/preemptive.o" />
       <change beforePath="$PROJECT_DIR$/threads/producer.o" afterPath="$PROJECT_DIR$/threads/producer.o" />
-      <change beforePath="$PROJECT_DIR$/threads/synch.cc" afterPath="$PROJECT_DIR$/threads/synch.cc" />
+      <change beforePath="$PROJECT_DIR$/threads/scheduler.o" afterPath="$PROJECT_DIR$/threads/scheduler.o" />
+      <change beforePath="$PROJECT_DIR$/threads/stats.o" afterPath="$PROJECT_DIR$/threads/stats.o" />
       <change beforePath="$PROJECT_DIR$/threads/synch.o" afterPath="$PROJECT_DIR$/threads/synch.o" />
-      <change beforePath="$PROJECT_DIR$/threads/threadtest.cc" afterPath="$PROJECT_DIR$/threads/threadtest.cc" />
+      <change beforePath="$PROJECT_DIR$/threads/sysdep.o" afterPath="$PROJECT_DIR$/threads/sysdep.o" />
+      <change beforePath="$PROJECT_DIR$/threads/system.o" afterPath="$PROJECT_DIR$/threads/system.o" />
+      <change beforePath="$PROJECT_DIR$/threads/thread.o" afterPath="$PROJECT_DIR$/threads/thread.o" />
       <change beforePath="$PROJECT_DIR$/threads/threadtest.o" afterPath="$PROJECT_DIR$/threads/threadtest.o" />
+      <change beforePath="$PROJECT_DIR$/threads/timer.o" afterPath="$PROJECT_DIR$/threads/timer.o" />
+      <change beforePath="$PROJECT_DIR$/threads/utility.o" afterPath="$PROJECT_DIR$/threads/utility.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/Makefile (1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/userprog/addrspace.o" afterPath="$PROJECT_DIR$/userprog/addrspace.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/bitmap.o" afterPath="$PROJECT_DIR$/userprog/bitmap.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/console.o" afterPath="$PROJECT_DIR$/userprog/console.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/consumer.o" afterPath="$PROJECT_DIR$/userprog/consumer.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/exception.o" afterPath="$PROJECT_DIR$/userprog/exception.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/interrupt.o" afterPath="$PROJECT_DIR$/userprog/interrupt.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/machine.o" afterPath="$PROJECT_DIR$/userprog/machine.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/main.o" afterPath="$PROJECT_DIR$/userprog/main.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/mipssim.o" afterPath="$PROJECT_DIR$/userprog/mipssim.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/nachos" afterPath="$PROJECT_DIR$/userprog/nachos" />
+      <change beforePath="$PROJECT_DIR$/userprog/preemptive.o" afterPath="$PROJECT_DIR$/userprog/preemptive.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/producer.o" afterPath="$PROJECT_DIR$/userprog/producer.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/progtest.o" afterPath="$PROJECT_DIR$/userprog/progtest.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/scheduler.o" afterPath="$PROJECT_DIR$/userprog/scheduler.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/stats.o" afterPath="$PROJECT_DIR$/userprog/stats.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/synch.o" afterPath="$PROJECT_DIR$/userprog/synch.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/sysdep.o" afterPath="$PROJECT_DIR$/userprog/sysdep.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/system.o" afterPath="$PROJECT_DIR$/userprog/system.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/thread.o" afterPath="$PROJECT_DIR$/userprog/thread.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/threadtest.o" afterPath="$PROJECT_DIR$/userprog/threadtest.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/timer.o" afterPath="$PROJECT_DIR$/userprog/timer.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/translate.o" afterPath="$PROJECT_DIR$/userprog/translate.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/utility.o" afterPath="$PROJECT_DIR$/userprog/utility.o" />
+      <change beforePath="$PROJECT_DIR$/vm/Makefile (1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vm/addrspace.o" afterPath="$PROJECT_DIR$/vm/addrspace.o" />
+      <change beforePath="$PROJECT_DIR$/vm/bitmap.o" afterPath="$PROJECT_DIR$/vm/bitmap.o" />
+      <change beforePath="$PROJECT_DIR$/vm/console.o" afterPath="$PROJECT_DIR$/vm/console.o" />
+      <change beforePath="$PROJECT_DIR$/vm/consumer.o" afterPath="$PROJECT_DIR$/vm/consumer.o" />
+      <change beforePath="$PROJECT_DIR$/vm/exception.o" afterPath="$PROJECT_DIR$/vm/exception.o" />
+      <change beforePath="$PROJECT_DIR$/vm/interrupt.o" afterPath="$PROJECT_DIR$/vm/interrupt.o" />
+      <change beforePath="$PROJECT_DIR$/vm/machine.o" afterPath="$PROJECT_DIR$/vm/machine.o" />
+      <change beforePath="$PROJECT_DIR$/vm/main.o" afterPath="$PROJECT_DIR$/vm/main.o" />
+      <change beforePath="$PROJECT_DIR$/vm/mipssim.o" afterPath="$PROJECT_DIR$/vm/mipssim.o" />
+      <change beforePath="$PROJECT_DIR$/vm/nachos" afterPath="$PROJECT_DIR$/vm/nachos" />
+      <change beforePath="$PROJECT_DIR$/vm/preemptive.o" afterPath="$PROJECT_DIR$/vm/preemptive.o" />
+      <change beforePath="$PROJECT_DIR$/vm/producer.o" afterPath="$PROJECT_DIR$/vm/producer.o" />
+      <change beforePath="$PROJECT_DIR$/vm/progtest.o" afterPath="$PROJECT_DIR$/vm/progtest.o" />
+      <change beforePath="$PROJECT_DIR$/vm/scheduler.o" afterPath="$PROJECT_DIR$/vm/scheduler.o" />
+      <change beforePath="$PROJECT_DIR$/vm/stats.o" afterPath="$PROJECT_DIR$/vm/stats.o" />
+      <change beforePath="$PROJECT_DIR$/vm/synch.o" afterPath="$PROJECT_DIR$/vm/synch.o" />
+      <change beforePath="$PROJECT_DIR$/vm/sysdep.o" afterPath="$PROJECT_DIR$/vm/sysdep.o" />
+      <change beforePath="$PROJECT_DIR$/vm/system.o" afterPath="$PROJECT_DIR$/vm/system.o" />
+      <change beforePath="$PROJECT_DIR$/vm/thread.o" afterPath="$PROJECT_DIR$/vm/thread.o" />
+      <change beforePath="$PROJECT_DIR$/vm/threadtest.o" afterPath="$PROJECT_DIR$/vm/threadtest.o" />
+      <change beforePath="$PROJECT_DIR$/vm/timer.o" afterPath="$PROJECT_DIR$/vm/timer.o" />
+      <change beforePath="$PROJECT_DIR$/vm/translate.o" afterPath="$PROJECT_DIR$/vm/translate.o" />
+      <change beforePath="$PROJECT_DIR$/vm/utility.o" afterPath="$PROJECT_DIR$/vm/utility.o" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,146 +220,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <splitter split-orientation="horizontal" split-proportion="0.5">
-            <split-first>
-              <leaf>
-                <file leaf-file-name="synch.cc" pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/threads/synch.cc">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="464">
-                        <caret line="142" column="1" lean-forward="true" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
-                        <folding>
-                          <element signature="e#1118#1135#0" expanded="true" />
-                        </folding>
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-                <file leaf-file-name="main.cc" pinned="false" current-in-tab="false">
-                  <entry file="file://$PROJECT_DIR$/threads/main.cc">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="136">
-                        <caret line="59" column="15" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="15" />
-                        <folding>
-                          <element signature="e#1924#1944#0" expanded="true" />
-                          <element signature="e#3057#3070#0" expanded="true" />
-                        </folding>
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-              </leaf>
-            </split-first>
-            <split-second>
-              <leaf>
-                <file leaf-file-name="main.cc" pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/threads/main.cc">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="204">
-                        <caret line="87" column="32" lean-forward="false" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
-                        <folding>
-                          <element signature="e#1924#1944#0" expanded="true" />
-                          <element signature="e#3057#3070#0" expanded="true" />
-                          <element signature="e#3299#3808#0" expanded="true" />
-                        </folding>
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-              </leaf>
-            </split-second>
-          </splitter>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4674086">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="synch.h" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/threads/synch.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-549">
-                  <caret line="66" column="6" lean-forward="false" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
-                  <folding>
-                    <element signature="e#703#725#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="producer.cc" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/threads/producer.cc">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
-                  <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-                  <folding>
-                    <element signature="e#0#17#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="producer.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/threads/producer.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#39#61#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="consumer.cc" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/threads/consumer.cc">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="284">
-                  <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#0#17#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="threadtest.cc" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/threads/threadtest.cc">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="610">
-                  <caret line="108" column="34" lean-forward="false" selection-start-line="108" selection-start-column="34" selection-end-line="108" selection-end-column="34" />
-                  <folding>
-                    <element signature="e#451#468#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="consumer.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/threads/consumer.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#39#61#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="72" lean-forward="false" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -185,7 +247,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/bin/coff2noff.c" />
-        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/threads/system.h" />
         <option value="$PROJECT_DIR$/threads/scheduler.cc" />
@@ -199,6 +260,8 @@
         <option value="$PROJECT_DIR$/threads/producer.h" />
         <option value="$PROJECT_DIR$/threads/threadtest.cc" />
         <option value="$PROJECT_DIR$/threads/synch.cc" />
+        <option value="$PROJECT_DIR$/test/Makefile" />
+        <option value="$PROJECT_DIR$/Makefile" />
       </list>
     </option>
   </component>
@@ -212,11 +275,10 @@
     <option name="path" value="C:\Program Files (x86)\CodeBlocks\MinGW\bin\mingw32-make.exe" />
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1359" />
-    <option name="y" value="2" />
-    <option name="width" value="1292" />
-    <option name="height" value="989" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1999" />
+    <option name="width" value="654" />
+    <option name="height" value="991" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -243,11 +305,6 @@
               <item name="code" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="code" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="threads" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -257,7 +314,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -328,27 +390,32 @@
       <workItem from="1512547074157" duration="3481000" />
       <workItem from="1512654210948" duration="3423000" />
       <workItem from="1512666772415" duration="1848000" />
-      <workItem from="1512705537953" duration="26387000" />
+      <workItem from="1512705537953" duration="26731000" />
+      <workItem from="1512895785814" duration="547000" />
+      <workItem from="1513177691765" duration="588000" />
+      <workItem from="1513832680647" duration="1529000" />
+      <workItem from="1514040314533" duration="933000" />
+      <workItem from="1514989530426" duration="6008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43425000" />
+    <option name="totallyTimeSpent" value="53374000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="1358" y="-8" width="1296" height="1000" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1526232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15580286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24494383" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5027322" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.49726775" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51797754" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.516129" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -358,26 +425,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24494383" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5027322" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.49726775" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51797754" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1526232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -392,35 +439,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/threads/synch.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#703#725#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threads/scheduler.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="143" column="11" lean-forward="false" selection-start-line="143" selection-start-column="11" selection-end-line="143" selection-end-column="11" />
-          <folding>
-            <element signature="e#815#832#0" expanded="true" />
-            <element signature="e#3178#3365#0" expanded="true" />
-            <element signature="e#4545#4727#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threads/scheduler.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="2" lean-forward="false" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-          <folding>
-            <element signature="e#383#405#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -429,7 +451,7 @@
         <state relative-caret-position="544">
           <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding>
-            <element signature="e#451#468#0" expanded="true" />
+            <element signature="e#451#468#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -439,7 +461,7 @@
         <state relative-caret-position="1751">
           <caret line="103" column="28" lean-forward="false" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="28" />
           <folding>
-            <element signature="e#1118#1135#0" expanded="true" />
+            <element signature="e#1118#1135#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -449,9 +471,9 @@
         <state relative-caret-position="2431">
           <caret line="143" column="11" lean-forward="true" selection-start-line="143" selection-start-column="11" selection-end-line="143" selection-end-column="11" />
           <folding>
-            <element signature="e#815#832#0" expanded="true" />
-            <element signature="e#3178#3365#0" expanded="true" />
-            <element signature="e#4545#4727#0" expanded="true" />
+            <element signature="e#815#832#0" expanded="false" />
+            <element signature="e#3178#3365#0" expanded="false" />
+            <element signature="e#4545#4727#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -460,9 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-          <folding>
-            <element signature="e#383#405#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -471,7 +490,7 @@
         <state relative-caret-position="493">
           <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding>
-            <element signature="e#451#468#0" expanded="true" />
+            <element signature="e#451#468#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -481,24 +500,18 @@
         <state relative-caret-position="1309">
           <caret line="77" column="50" lean-forward="true" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
           <folding>
-            <element signature="e#703#725#0" expanded="true" />
+            <element signature="e#703#725#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/userprog/swtch.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/userprog/swtch.s" />
     <entry file="file://$PROJECT_DIR$/threads/synch.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1819">
           <caret line="107" column="9" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="9" />
           <folding>
-            <element signature="e#1118#1135#0" expanded="true" />
+            <element signature="e#1118#1135#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -508,7 +521,7 @@
         <state relative-caret-position="2006">
           <caret line="118" column="29" lean-forward="false" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="29" />
           <folding>
-            <element signature="e#703#725#0" expanded="true" />
+            <element signature="e#703#725#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -639,13 +652,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/userprog/swtch.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/userprog/swtch.s" />
     <entry file="file://$PROJECT_DIR$/Makefile (1)" />
     <entry file="file://$PROJECT_DIR$/threads/main (1).cc" />
     <entry file="file://$PROJECT_DIR$/threads/thread.h">
@@ -680,34 +687,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/threads/main.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="59" column="15" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="15" />
+        <state relative-caret-position="204">
+          <caret line="87" column="32" lean-forward="false" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
           <folding>
-            <element signature="e#1924#1944#0" expanded="true" />
-            <element signature="e#3057#3070#0" expanded="true" />
+            <element signature="e#1924#1944#0" expanded="false" />
+            <element signature="e#3057#3070#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threads/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5678">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -723,9 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <element signature="e#383#405#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -734,39 +721,19 @@
         <state relative-caret-position="114">
           <caret line="116" column="34" lean-forward="false" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
           <folding>
-            <element signature="e#815#832#0" expanded="true" />
-            <element signature="e#3178#3365#0" expanded="true" />
-            <element signature="e#4545#4727#0" expanded="true" />
+            <element signature="e#815#832#0" expanded="false" />
+            <element signature="e#3178#3365#0" expanded="false" />
+            <element signature="e#4545#4727#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threads/producer.cc">
+    <entry file="file://$PROJECT_DIR$/threads/synch.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        <state relative-caret-position="634">
+          <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
           <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threads/consumer.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threads/producer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#39#61#0" expanded="true" />
+            <element signature="e#1118#1135#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -781,33 +748,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threads/threadtest.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="108" column="34" lean-forward="false" selection-start-line="108" selection-start-column="34" selection-end-line="108" selection-end-column="34" />
-          <folding>
-            <element signature="e#451#468#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threads/synch.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-549">
-          <caret line="66" column="6" lean-forward="false" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+        <state relative-caret-position="1377">
+          <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
           <folding>
-            <element signature="e#703#725#0" expanded="true" />
+            <element signature="e#703#725#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threads/synch.cc">
+    <entry file="file://$PROJECT_DIR$/threads/threadtest.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="142" column="1" lean-forward="true" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
+        <state relative-caret-position="148">
+          <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
           <folding>
-            <element signature="e#1118#1135#0" expanded="true" />
+            <element signature="e#451#468#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threads/consumer.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#17#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threads/producer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#39#61#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threads/producer.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#17#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/start.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threads/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/halt.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="72" lean-forward="false" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
