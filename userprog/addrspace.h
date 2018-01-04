@@ -15,6 +15,8 @@
 
 #include "copyright.h"
 #include "filesys.h"
+#include "../machine/translate.h"
+#include "../filesys/openfile.h"
 
 #define UserStackSize		1024 	// increase this as necessary!
 

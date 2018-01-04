@@ -54,6 +54,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/userprog/addrspace.cc" "D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/cmake-build-debug/CMakeFiles/code.dir/userprog/addrspace.cc.obj"
   "D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/userprog/bitmap.cc" "D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/cmake-build-debug/CMakeFiles/code.dir/userprog/bitmap.cc.obj"
   "D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/userprog/exception.cc" "D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/cmake-build-debug/CMakeFiles/code.dir/userprog/exception.cc.obj"
+  "D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/userprog/memorymanager.cc" "D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/cmake-build-debug/CMakeFiles/code.dir/userprog/memorymanager.cc.obj"
+  "D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/userprog/processtable.cc" "D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/cmake-build-debug/CMakeFiles/code.dir/userprog/processtable.cc.obj"
   "D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/userprog/progtest.cc" "D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/cmake-build-debug/CMakeFiles/code.dir/userprog/progtest.cc.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

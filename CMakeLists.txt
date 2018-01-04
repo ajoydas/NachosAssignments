@@ -97,4 +97,4 @@ add_executable(code
         vm/Makefile
         Makefile
         Makefile.common
-        Makefile.dep)
+        Makefile.dep userprog/memorymanager.cc userprog/memorymanager.h userprog/processtable.cc userprog/processtable.h)

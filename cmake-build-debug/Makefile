@@ -1256,6 +1256,60 @@ userprog/exception.cc.s:
 	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/userprog/exception.cc.s
 .PHONY : userprog/exception.cc.s
 
+userprog/memorymanager.obj: userprog/memorymanager.cc.obj
+
+.PHONY : userprog/memorymanager.obj
+
+# target to build an object file
+userprog/memorymanager.cc.obj:
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/userprog/memorymanager.cc.obj
+.PHONY : userprog/memorymanager.cc.obj
+
+userprog/memorymanager.i: userprog/memorymanager.cc.i
+
+.PHONY : userprog/memorymanager.i
+
+# target to preprocess a source file
+userprog/memorymanager.cc.i:
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/userprog/memorymanager.cc.i
+.PHONY : userprog/memorymanager.cc.i
+
+userprog/memorymanager.s: userprog/memorymanager.cc.s
+
+.PHONY : userprog/memorymanager.s
+
+# target to generate assembly for a file
+userprog/memorymanager.cc.s:
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/userprog/memorymanager.cc.s
+.PHONY : userprog/memorymanager.cc.s
+
+userprog/processtable.obj: userprog/processtable.cc.obj
+
+.PHONY : userprog/processtable.obj
+
+# target to build an object file
+userprog/processtable.cc.obj:
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/userprog/processtable.cc.obj
+.PHONY : userprog/processtable.cc.obj
+
+userprog/processtable.i: userprog/processtable.cc.i
+
+.PHONY : userprog/processtable.i
+
+# target to preprocess a source file
+userprog/processtable.cc.i:
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/userprog/processtable.cc.i
+.PHONY : userprog/processtable.cc.i
+
+userprog/processtable.s: userprog/processtable.cc.s
+
+.PHONY : userprog/processtable.s
+
+# target to generate assembly for a file
+userprog/processtable.cc.s:
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/userprog/processtable.cc.s
+.PHONY : userprog/processtable.cc.s
+
 userprog/progtest.obj: userprog/progtest.cc.obj
 
 .PHONY : userprog/progtest.obj
@@ -1418,6 +1472,12 @@ help:
 	@echo ... userprog/exception.obj
 	@echo ... userprog/exception.i
 	@echo ... userprog/exception.s
+	@echo ... userprog/memorymanager.obj
+	@echo ... userprog/memorymanager.i
+	@echo ... userprog/memorymanager.s
+	@echo ... userprog/processtable.obj
+	@echo ... userprog/processtable.i
+	@echo ... userprog/processtable.s
 	@echo ... userprog/progtest.obj
 	@echo ... userprog/progtest.i
 	@echo ... userprog/progtest.s

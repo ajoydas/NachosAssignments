@@ -8,17 +8,29 @@
 // All rights reserved.  See copyright.h for copyright notice and limitation 
 // of liability and disclaimer of warranty provisions.
 
-#include "copyright.h"
+#include <cstdio>
 #include "system.h"
 #include "console.h"
 #include "addrspace.h"
 #include "synch.h"
+#include "../filesys/openfile.h"
+#include "../machine/sysdep.h"
+#include "memorymanager.h"
+#include "../machine/machine.h"
+#include "../threads/system.h"
+#include "../machine/console.h"
+#include "../threads/synch.h"
+#include "processtable.h"
 
 //----------------------------------------------------------------------
 // StartProcess
 // 	Run a user program.  Open the executable, load it into
 //	memory, and jump to it.
 //----------------------------------------------------------------------
+
+MemoryManager *memoryManager;
+ProcessTable *processTable;
+int totalNumOfProcess = 10;
 
 void
 StartProcess(const char *filename)
@@ -30,8 +42,14 @@ StartProcess(const char *filename)
 	printf("Unable to open file %s\n", filename);
 	return;
     }
-    space = new AddrSpace(executable);    
+
+    memoryManager = new MemoryManager(NumPhysPages);
+    processTable = new ProcessTable(totalNumOfProcess);
+
+    space = new AddrSpace(executable);
     currentThread->space = space;
+    int pid = processTable->Alloc(currentThread);
+    DEBUG('a', "Init process with Pid = %d created.\n",pid);
 
     delete executable;			// close file
 

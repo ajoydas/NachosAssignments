@@ -15,11 +15,19 @@
 // All rights reserved.  See copyright.h for copyright notice and limitation 
 // of liability and disclaimer of warranty provisions.
 
+#include <cstdio>
 #include "copyright.h"
 #include "system.h"
 #include "addrspace.h"
 #include "noff.h"
+#include "../machine/machine.h"
+#include "../threads/utility.h"
+#include "../machine/sysdep.h"
+#include "../filesys/openfile.h"
+#include "memorymanager.h"
+#include <vector>
 
+using namespace std;
 //----------------------------------------------------------------------
 // SwapHeader
 // 	Do little endian to big endian conversion on the bytes in the 
@@ -57,6 +65,7 @@ SwapHeader (NoffHeader *noffH)
 //	"executable" is the file containing the object code to load into memory
 //----------------------------------------------------------------------
 
+extern MemoryManager *memoryManager;
 AddrSpace::AddrSpace(OpenFile *executable)
 {
     NoffHeader noffH;
@@ -82,15 +91,30 @@ AddrSpace::AddrSpace(OpenFile *executable)
 
     DEBUG('a', "Initializing address space, num pages %d, size %d\n", 
 					numPages, size);
-// first, set up the translation 
+// first, set up the translation
+
+    vector<int> pages;
     pageTable = new TranslationEntry[numPages];
     for (i = 0; i < numPages; i++) {
-	pageTable[i].virtualPage = i;	// for now, virtual page # = phys page #
-	pageTable[i].physicalPage = i;
-	pageTable[i].valid = true;
-	pageTable[i].use = false;
-	pageTable[i].dirty = false;
-	pageTable[i].readOnly = false;  // if the code segment was entirely on 
+        pageTable[i].virtualPage = i;	// for now, virtual page # = phys page #
+
+        int physicalPage = memoryManager->AllocPage();
+        DEBUG('a',"VPN: %d PPN: %d\n", i, physicalPage);
+
+        if(physicalPage == -1){
+            for(int j=0; j <pages.size();j++)
+            {
+                memoryManager->FreePage(pages[j]);
+            }
+            ASSERT(false);
+        }
+        pages.push_back(physicalPage);
+
+        pageTable[i].physicalPage = physicalPage;
+        pageTable[i].valid = true;
+        pageTable[i].use = false;
+        pageTable[i].dirty = false;
+        pageTable[i].readOnly = false;  // if the code segment was entirely on
 					// a separate page, we could set its 
 					// pages to be read-only
     }

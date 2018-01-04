@@ -21,9 +21,14 @@
 // All rights reserved.  See copyright.h for copyright notice and limitation 
 // of liability and disclaimer of warranty provisions.
 
+#include <cstdio>
 #include "copyright.h"
 #include "system.h"
 #include "syscall.h"
+#include "../machine/machine.h"
+#include "../threads/utility.h"
+#include "../threads/system.h"
+#include "../machine/sysdep.h"
 
 //----------------------------------------------------------------------
 // ExceptionHandler
@@ -61,3 +66,42 @@ ExceptionHandler(ExceptionType which)
 	ASSERT(false);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

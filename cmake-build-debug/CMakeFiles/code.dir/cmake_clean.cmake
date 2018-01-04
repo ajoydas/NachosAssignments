@@ -42,6 +42,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/code.dir/userprog/bitmap.cc.obj"
   "CMakeFiles/code.dir/userprog/exception.cc.obj"
   "CMakeFiles/code.dir/userprog/progtest.cc.obj"
+  "CMakeFiles/code.dir/userprog/memorymanager.cc.obj"
+  "CMakeFiles/code.dir/userprog/processtable.cc.obj"
   "code.pdb"
   "code.exe"
   "code.exe.manifest"

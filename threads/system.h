@@ -15,6 +15,9 @@
 #include "interrupt.h"
 #include "stats.h"
 #include "timer.h"
+#include "../machine/interrupt.h"
+#include "../machine/stats.h"
+#include "../machine/timer.h"
 
 // Initialization and cleanup routines
 extern void Initialize(int argc, char **argv); 	// Initialization,

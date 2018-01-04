@@ -1088,6 +1088,54 @@ CMakeFiles/code.dir/userprog/progtest.cc.obj.provides: CMakeFiles/code.dir/userp
 CMakeFiles/code.dir/userprog/progtest.cc.obj.provides.build: CMakeFiles/code.dir/userprog/progtest.cc.obj
 
 
+CMakeFiles/code.dir/userprog/memorymanager.cc.obj: CMakeFiles/code.dir/flags.make
+CMakeFiles/code.dir/userprog/memorymanager.cc.obj: ../userprog/memorymanager.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/code.dir/userprog/memorymanager.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\userprog\memorymanager.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\memorymanager.cc"
+
+CMakeFiles/code.dir/userprog/memorymanager.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/userprog/memorymanager.cc.i"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\memorymanager.cc" > CMakeFiles\code.dir\userprog\memorymanager.cc.i
+
+CMakeFiles/code.dir/userprog/memorymanager.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/userprog/memorymanager.cc.s"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\memorymanager.cc" -o CMakeFiles\code.dir\userprog\memorymanager.cc.s
+
+CMakeFiles/code.dir/userprog/memorymanager.cc.obj.requires:
+
+.PHONY : CMakeFiles/code.dir/userprog/memorymanager.cc.obj.requires
+
+CMakeFiles/code.dir/userprog/memorymanager.cc.obj.provides: CMakeFiles/code.dir/userprog/memorymanager.cc.obj.requires
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/userprog/memorymanager.cc.obj.provides.build
+.PHONY : CMakeFiles/code.dir/userprog/memorymanager.cc.obj.provides
+
+CMakeFiles/code.dir/userprog/memorymanager.cc.obj.provides.build: CMakeFiles/code.dir/userprog/memorymanager.cc.obj
+
+
+CMakeFiles/code.dir/userprog/processtable.cc.obj: CMakeFiles/code.dir/flags.make
+CMakeFiles/code.dir/userprog/processtable.cc.obj: ../userprog/processtable.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/code.dir/userprog/processtable.cc.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\code.dir\userprog\processtable.cc.obj -c "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\processtable.cc"
+
+CMakeFiles/code.dir/userprog/processtable.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/code.dir/userprog/processtable.cc.i"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\processtable.cc" > CMakeFiles\code.dir\userprog\processtable.cc.i
+
+CMakeFiles/code.dir/userprog/processtable.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/code.dir/userprog/processtable.cc.s"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\userprog\processtable.cc" -o CMakeFiles\code.dir\userprog\processtable.cc.s
+
+CMakeFiles/code.dir/userprog/processtable.cc.obj.requires:
+
+.PHONY : CMakeFiles/code.dir/userprog/processtable.cc.obj.requires
+
+CMakeFiles/code.dir/userprog/processtable.cc.obj.provides: CMakeFiles/code.dir/userprog/processtable.cc.obj.requires
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/userprog/processtable.cc.obj.provides.build
+.PHONY : CMakeFiles/code.dir/userprog/processtable.cc.obj.provides
+
+CMakeFiles/code.dir/userprog/processtable.cc.obj.provides.build: CMakeFiles/code.dir/userprog/processtable.cc.obj
+
+
 # Object files for target code
 code_OBJECTS = \
 "CMakeFiles/code.dir/bin/coff2flat.c.obj" \
@@ -1132,7 +1180,9 @@ code_OBJECTS = \
 "CMakeFiles/code.dir/userprog/addrspace.cc.obj" \
 "CMakeFiles/code.dir/userprog/bitmap.cc.obj" \
 "CMakeFiles/code.dir/userprog/exception.cc.obj" \
-"CMakeFiles/code.dir/userprog/progtest.cc.obj"
+"CMakeFiles/code.dir/userprog/progtest.cc.obj" \
+"CMakeFiles/code.dir/userprog/memorymanager.cc.obj" \
+"CMakeFiles/code.dir/userprog/processtable.cc.obj"
 
 # External object files for target code
 code_EXTERNAL_OBJECTS =
@@ -1180,11 +1230,13 @@ code.exe: CMakeFiles/code.dir/userprog/addrspace.cc.obj
 code.exe: CMakeFiles/code.dir/userprog/bitmap.cc.obj
 code.exe: CMakeFiles/code.dir/userprog/exception.cc.obj
 code.exe: CMakeFiles/code.dir/userprog/progtest.cc.obj
+code.exe: CMakeFiles/code.dir/userprog/memorymanager.cc.obj
+code.exe: CMakeFiles/code.dir/userprog/processtable.cc.obj
 code.exe: CMakeFiles/code.dir/build.make
 code.exe: CMakeFiles/code.dir/linklibs.rsp
 code.exe: CMakeFiles/code.dir/objects1.rsp
 code.exe: CMakeFiles/code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX executable code.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Drive\L3-T2\OsSessional\nachos\Assignment 2\code\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Linking CXX executable code.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\code.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1235,6 +1287,8 @@ CMakeFiles/code.dir/requires: CMakeFiles/code.dir/userprog/addrspace.cc.obj.requ
 CMakeFiles/code.dir/requires: CMakeFiles/code.dir/userprog/bitmap.cc.obj.requires
 CMakeFiles/code.dir/requires: CMakeFiles/code.dir/userprog/exception.cc.obj.requires
 CMakeFiles/code.dir/requires: CMakeFiles/code.dir/userprog/progtest.cc.obj.requires
+CMakeFiles/code.dir/requires: CMakeFiles/code.dir/userprog/memorymanager.cc.obj.requires
+CMakeFiles/code.dir/requires: CMakeFiles/code.dir/userprog/processtable.cc.obj.requires
 
 .PHONY : CMakeFiles/code.dir/requires
 

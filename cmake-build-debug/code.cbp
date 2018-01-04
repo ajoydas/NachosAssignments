@@ -98,6 +98,9 @@
 		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/bin/coff2flat.c">
 			<Option target="code"/>
 		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/bin/coff2noff">
+			<Option target="code"/>
+		</Unit>
 		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/bin/coff2noff.c">
 			<Option target="code"/>
 		</Unit>
@@ -348,6 +351,18 @@
 			<Option target="code"/>
 		</Unit>
 		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/userprog/exception.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/userprog/memorymanager.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/userprog/memorymanager.h">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/userprog/processtable.cc">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/userprog/processtable.h">
 			<Option target="code"/>
 		</Unit>
 		<Unit filename="D:/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/userprog/progtest.cc">
