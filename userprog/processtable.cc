@@ -25,10 +25,11 @@ int ProcessTable::Alloc(void *object) {
         processes[allocated] = object;
     }
     tableLock->Release();
-    return allocated;
+    return allocated+1;
 }
 
-void* ProcessTable::Get(int index) {
+void* ProcessTable::Get(int pid) {
+    int index = pid-1;
     void *process = NULL;
     tableLock->Acquire();
     if(bitMap->Test(index))
@@ -39,11 +40,12 @@ void* ProcessTable::Get(int index) {
     return process;
 }
 
-void ProcessTable::Release(int index) {
+void ProcessTable::Release(int pid) {
+    int index = pid-1;
     tableLock->Acquire();
     if(bitMap->Test(index))
     {
-        delete processes[index];
+        // clear object or not
         bitMap->Clear(index);
     }
     tableLock->Release();
@@ -52,4 +54,11 @@ void ProcessTable::Release(int index) {
 ProcessTable::~ProcessTable() {
     delete bitMap;
     delete [] processes;
+}
+
+int ProcessTable::numberOfRunningProcess() {
+    tableLock->Acquire();
+    int total = size - bitMap->NumClear();
+    tableLock->Release();
+    return total;
 }

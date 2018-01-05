@@ -21,6 +21,7 @@
 #include "../machine/console.h"
 #include "../threads/synch.h"
 #include "processtable.h"
+#include "syncconsole.h"
 
 //----------------------------------------------------------------------
 // StartProcess
@@ -30,13 +31,13 @@
 
 MemoryManager *memoryManager;
 ProcessTable *processTable;
+SyncConsole *syncConsole;
 int totalNumOfProcess = 10;
 
 void
 StartProcess(const char *filename)
 {
     OpenFile *executable = fileSystem->Open(filename);
-    AddrSpace *space;
 
     if (executable == NULL) {
 	printf("Unable to open file %s\n", filename);
@@ -45,16 +46,16 @@ StartProcess(const char *filename)
 
     memoryManager = new MemoryManager(NumPhysPages);
     processTable = new ProcessTable(totalNumOfProcess);
+    syncConsole = new SyncConsole();
 
-    space = new AddrSpace(executable);
-    currentThread->space = space;
+    currentThread->space = new AddrSpace(executable);
     int pid = processTable->Alloc(currentThread);
     DEBUG('a', "Init process with Pid = %d created.\n",pid);
 
     delete executable;			// close file
 
-    space->InitRegisters();		// set the initial register values
-    space->RestoreState();		// load page table register
+    currentThread->space->InitRegisters();		// set the initial register values
+    currentThread->space->RestoreState();		// load page table register
 
     machine->Run();			// jump to the user progam
     ASSERT(false);			// machine->Run never returns;

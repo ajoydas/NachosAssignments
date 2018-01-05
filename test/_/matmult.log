@@ -1,0 +1,5 @@
+numsections 3 
+Loading 3 sections:
+	".text", filepos 0xd0, mempos 0x0, size 0x3c0
+	".data", filepos 0x490, mempos 0x3c0, size 0x0
+	".bss", filepos 0x0, mempos 0x3c0, size 0x12c0

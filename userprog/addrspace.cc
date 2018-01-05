@@ -19,12 +19,14 @@
 #include "copyright.h"
 #include "system.h"
 #include "addrspace.h"
-#include "noff.h"
 #include "../machine/machine.h"
 #include "../threads/utility.h"
 #include "../machine/sysdep.h"
 #include "../filesys/openfile.h"
 #include "memorymanager.h"
+#include "../machine/interrupt.h"
+#include "../threads/system.h"
+#include "../bin/noff.h"
 #include <vector>
 
 using namespace std;
@@ -69,7 +71,7 @@ extern MemoryManager *memoryManager;
 AddrSpace::AddrSpace(OpenFile *executable)
 {
     NoffHeader noffH;
-    unsigned int i, size;
+    unsigned int i, j, size;
 
     executable->ReadAt((char *)&noffH, sizeof(noffH), 0);
     if ((noffH.noffMagic != NOFFMAGIC) && 
@@ -124,20 +126,47 @@ AddrSpace::AddrSpace(OpenFile *executable)
     bzero(machine->mainMemory, size);
 
 // then, copy in the code and data segments into memory
-    if (noffH.code.size > 0) {
-        DEBUG('a', "Initializing code segment, at 0x%x, size %d\n", 
-			noffH.code.virtualAddr, noffH.code.size);
-        executable->ReadAt(&(machine->mainMemory[noffH.code.virtualAddr]),
-			noffH.code.size, noffH.code.inFileAddr);
-    }
-    if (noffH.initData.size > 0) {
-        DEBUG('a', "Initializing data segment, at 0x%x, size %d\n", 
-			noffH.initData.virtualAddr, noffH.initData.size);
-        executable->ReadAt(&(machine->mainMemory[noffH.initData.virtualAddr]),
-			noffH.initData.size, noffH.initData.inFileAddr);
+
+    IntStatus prevState = interrupt->SetLevel(IntOff);
+    for(j=0; j< numPages; j++)
+    {
+        bzero(&machine->mainMemory[PageSize * pageTable[j].physicalPage], PageSize);
     }
 
+    unsigned int pagesCode, pagesData, startAddr, physAddr;
+    pagesCode= divRoundUp(noffH.code.size, PageSize);
+    pagesData= divRoundUp(noffH.initData.size, PageSize);
+
+    if (noffH.code.size > 0) {
+        DEBUG('a', "Initializing code segment, at 0x%x, size %d\n",
+              noffH.code.virtualAddr, noffH.code.size);
+        startAddr = noffH.code.virtualAddr;
+        for(j=0; j< pagesCode; j++){
+            physAddr = virtualToPhysAddr(startAddr);
+            char *physBuffer = &(machine->mainMemory[physAddr]);
+            int size = PageSize;
+            int fileOffset = noffH.code.inFileAddr + j * PageSize;
+            executable->ReadAt(physBuffer, size, fileOffset);
+            startAddr += PageSize;
+        }
+    }
+    if (noffH.initData.size > 0) {
+        DEBUG('a', "Initializing data segment, at 0x%x, size %d\n",
+              noffH.initData.virtualAddr, noffH.initData.size);
+        startAddr = noffH.initData.virtualAddr;
+        for(j=0; j< pagesCode; j++){
+            physAddr = virtualToPhysAddr(startAddr);
+            char *physBuffer = &(machine->mainMemory[physAddr]);
+            int size = PageSize;
+            int fileOffset = noffH.initData.inFileAddr + j * PageSize;
+            executable->ReadAt(physBuffer, size, fileOffset);
+            startAddr += PageSize;
+        }
+    }
+
+    interrupt->SetLevel(prevState);
 }
+
 
 //----------------------------------------------------------------------
 // AddrSpace::~AddrSpace
@@ -146,7 +175,11 @@ AddrSpace::AddrSpace(OpenFile *executable)
 
 AddrSpace::~AddrSpace()
 {
-   delete pageTable;
+    for(int i=0; i<numPages; i++)
+    {
+        memoryManager->FreePage(pageTable[i].physicalPage);
+    }
+    delete []pageTable;
 }
 
 //----------------------------------------------------------------------
@@ -204,4 +237,16 @@ void AddrSpace::RestoreState()
 {
     machine->pageTable = pageTable;
     machine->pageTableSize = numPages;
+}
+
+
+
+unsigned int
+AddrSpace::virtualToPhysAddr(int virtualAddr){
+    unsigned int virtualPageNum = (unsigned)virtualAddr/PageSize;
+    unsigned int offset = virtualAddr%PageSize;
+    unsigned int pageFrame = pageTable[virtualPageNum].physicalPage;
+    unsigned int physicalAddr = pageFrame*PageSize+offset;
+    return physicalAddr;
+
 }

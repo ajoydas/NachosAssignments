@@ -28,7 +28,12 @@
 #include "../machine/machine.h"
 #include "../threads/utility.h"
 #include "../threads/system.h"
+#include "../filesys/openfile.h"
+#include "memorymanager.h"
+#include "addrspace.h"
+#include "processtable.h"
 #include "../machine/sysdep.h"
+#include "syncconsole.h"
 
 //----------------------------------------------------------------------
 // ExceptionHandler
@@ -52,26 +57,206 @@
 //	"which" is the kind of exception.  The list of possible exceptions 
 //	are in machine.h.
 //----------------------------------------------------------------------
+extern MemoryManager *memoryManager;
+extern ProcessTable *processTable;
+extern SyncConsole *syncConsole;
+
+void SysCallHaltHandler();
+
+void SysCallExecHandler(int arg1);
+
+void SysCallExitHandler();
+
+void forwardPC();
+
+void SysCallReadHandler(int buffer, int size);
+
+void SysCallWriteHandler(int buffer, int size);
+
+void forkFuncForProgram(int pid) {
+    currentThread->space->InitRegisters();		// set the initial register values
+    currentThread->space->RestoreState();		// load page table register
+    machine->Run();
+}
+
+SpaceId Exec(char *name) {
+    OpenFile* executable = fileSystem->Open(name);
+    if (executable != NULL)
+    {
+        // Set up a new thread and alloc address space for it.
+        Thread* thread = new Thread(name);
+        thread->space =  new AddrSpace(executable);
+        int pid =  processTable->Alloc(thread);
+        thread->spaceId = pid;
+        DEBUG('a', "Exec from current thread -> executable %s with Pid: %d\n", name, pid);
+        if(pid == 0)
+        {
+            printf("Process creation failed! Maximum process limit exceeded.");
+            ASSERT(false);
+        }else {
+            thread->Fork(reinterpret_cast<VoidFunctionPtr>(forkFuncForProgram), reinterpret_cast<void *>(pid));
+        }
+
+        delete executable;
+        return pid;
+    }
+    // Can't open executable file, so return -1.
+    machine->WriteRegister(2, -1);
+    return -1;
+}
 
 void
 ExceptionHandler(ExceptionType which)
 {
+    DEBUG('a', "System Call happened.\n");
     int type = machine->ReadRegister(2);
+    int arg1 = machine->ReadRegister(4);
+    int arg2 = machine->ReadRegister(5);
+    int arg3 = machine->ReadRegister(6);
+    int arg4 = machine->ReadRegister(7);
 
-    if ((which == SyscallException) && (type == SC_Halt)) {
-	DEBUG('a', "Shutdown, initiated by user program.\n");
-   	interrupt->Halt();
-    } else {
-	printf("Unexpected user mode exception %d %d\n", which, type);
-	ASSERT(false);
+    switch (which)
+    {
+        case SyscallException:
+            switch (type)
+            {
+                case SC_Halt:
+                    SysCallHaltHandler();
+                    break;
+
+                case SC_Exec:
+                    SysCallExecHandler(arg1);
+                    break;
+
+                case SC_Exit:
+                    SysCallExitHandler();
+                    break;
+
+                case SC_Read:
+                    SysCallReadHandler(arg1, arg2);
+                    break;
+
+                case SC_Write:
+                    SysCallWriteHandler(arg1, arg2);
+
+                default:
+                    break;
+            }
+            break;
+
+        default:
+            printf("Unexpected user mode exception %d %d\n", which, type);
+            ASSERT(false);
     }
 }
 
 
+void SysCallHaltHandler() {
+    DEBUG('a', "Shutdown, initiated by user program.\n");
+    interrupt->Halt();
+}
 
 
 
+void forwardPC() {
+    int pc = machine->ReadRegister(PCReg);
+    machine->WriteRegister(PrevPCReg, pc);
+    pc = machine->ReadRegister(NextPCReg);
+    machine->WriteRegister(PCReg, pc);
+    pc += 4;
+    machine->WriteRegister(NextPCReg, pc);
+}
 
+void SysCallExecHandler(int arg1) {
+    char filename[100];
+    int i = 0;
+
+    // Get the executable file name from user space.
+    do
+    {
+        machine->ReadMem(arg1 + i, 1, (int*)&filename[i]);
+    }while(filename[i++] != '\0');
+
+    DEBUG('a', "Trying to execute Process name: %s", filename);
+    int pid = Exec(filename);
+    if(pid == -1)
+    {
+        printf("File %s not found.",filename);
+        ASSERT(false);
+    }
+    else
+    {
+        machine->WriteRegister(2, pid);
+    }
+
+    forwardPC();
+}
+
+
+
+//void Exit(int status) {
+//    DEBUG('a', "Exit Code: %d", status);
+//    for(int i=0; i< machine->pageTableSize;i++)
+//    {
+//        memoryManager->FreePage(machine->pageTable[i].physicalPage);
+//    }
+//
+//    processTable->Release(currentThread->spaceId);
+//    if(processTable->numberOfRunningProcess() == 0) {
+//        printf("No more processes to run. Halting.....");
+//        interrupt->Halt();
+//    } else{
+//        DEBUG('a',"System call Exit for Pid: %d",currentThread->spaceId);
+//        currentThread->Finish();
+//    }
+//}
+
+void SysCallExitHandler() {
+    int status = machine->ReadRegister(4);
+//    Exit(arg);
+    DEBUG('a', "Exit Code: %d", status);
+    for(int i=0; i< machine->pageTableSize;i++)
+    {
+        memoryManager->FreePage(machine->pageTable[i].physicalPage);
+    }
+
+    processTable->Release(currentThread->spaceId);
+    if(processTable->numberOfRunningProcess() == 0) {
+        printf("No more processes to run. Halting.....");
+        interrupt->Halt();
+    } else{
+        DEBUG('a',"System call Exit for Pid: %d",currentThread->spaceId);
+        currentThread->Finish();
+    }
+    forwardPC();
+}
+
+
+int Read(char *buffer, int size, OpenFileId id)
+{
+    syncConsole->Read(buffer, size, id);
+}
+
+void SysCallReadHandler(int buffer, int size) {
+    DEBUG('a', "Reading from buffer: %s of size:", (char *) buffer, size);
+    int bytesRead = Read((char*)buffer, size, 0);
+    DEBUG('a', "Read from buffer: %s of size:", (char *) buffer, bytesRead);
+    machine->WriteRegister(2, bytesRead);
+    forwardPC();
+}
+
+
+void Write(char *buffer, int size, OpenFileId id){
+    syncConsole->Write(buffer, size, id);
+}
+
+void SysCallWriteHandler(int buffer, int size) {
+    DEBUG('a', "Writing to buffer: %s of size:", (char *) buffer, size);
+    Write((char *) buffer, size, 0);
+    DEBUG('a', "Wrote to buffer: %s of size:", (char *) buffer, size);
+    machine->WriteRegister(2, 1);
+    forwardPC();
+}
 
 
 
