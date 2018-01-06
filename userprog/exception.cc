@@ -74,8 +74,9 @@ void SysCallReadHandler(int buffer, int size);
 void SysCallWriteHandler(int buffer, int size);
 
 void forkFuncForProgram(int pid) {
-    currentThread->space->InitRegisters();		// set the initial register values
-    currentThread->space->RestoreState();		// load page table register
+    Thread *thread = (Thread *)(processTable->Get(pid));
+    thread->space->InitRegisters();		// set the initial register values
+    thread->space->RestoreState();		// load page table register
     DEBUG('a', "Forking new thread with pid: %d", pid);
     machine->Run();
     ASSERT(false);
@@ -96,7 +97,9 @@ SpaceId Exec(char *name) {
             printf("Process creation failed! Maximum process limit exceeded.\n");
             ASSERT(false);
         }else {
-            thread->Fork(reinterpret_cast<VoidFunctionPtr>(forkFuncForProgram), reinterpret_cast<void *>(pid));
+            DEBUG('a', "Forking new thread with pid: %d\n", pid);
+            thread->Fork(reinterpret_cast<VoidFunctionPtr>(forkFuncForProgram),
+                         reinterpret_cast<void *>(pid));
         }
 
         delete executable;

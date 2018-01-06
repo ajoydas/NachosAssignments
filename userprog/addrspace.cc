@@ -104,9 +104,10 @@ AddrSpace::AddrSpace(OpenFile *executable)
         DEBUG('m',"VPN: %d PPN: %d\n", i, physicalPage);
 
         if(physicalPage == -1){
-            for(int j=0; j <pages.size();j++)
+            DEBUG('m', "Not enough memory.Freeing up allocated pages....");
+            for(int k=0; k <pages.size();k++)
             {
-                memoryManager->FreePage(pages[j]);
+                memoryManager->FreePage(pages[k]);
             }
             ASSERT(false);
         }
@@ -123,7 +124,7 @@ AddrSpace::AddrSpace(OpenFile *executable)
     
 // zero out the entire address space, to zero the unitialized data segment 
 // and the stack segment
-    bzero(machine->mainMemory, size);
+//    bzero(machine->mainMemory, size);
 
 // then, copy in the code and data segments into memory
 
@@ -144,9 +145,9 @@ AddrSpace::AddrSpace(OpenFile *executable)
         for(j=0; j< pagesCode; j++){
             physAddr = virtualToPhysAddr(startAddr);
             char *physBuffer = &(machine->mainMemory[physAddr]);
-            int size = PageSize;
+            int psize = PageSize;
             int fileOffset = noffH.code.inFileAddr + j * PageSize;
-            executable->ReadAt(physBuffer, size, fileOffset);
+            executable->ReadAt(physBuffer, psize, fileOffset);
             startAddr += PageSize;
         }
     }
@@ -154,12 +155,12 @@ AddrSpace::AddrSpace(OpenFile *executable)
         DEBUG('a', "Initializing data segment, at 0x%x, size %d\n",
               noffH.initData.virtualAddr, noffH.initData.size);
         startAddr = noffH.initData.virtualAddr;
-        for(j=0; j< pagesCode; j++){
+        for(j=0; j< pagesData; j++){
             physAddr = virtualToPhysAddr(startAddr);
             char *physBuffer = &(machine->mainMemory[physAddr]);
-            int size = PageSize;
+            int psize = PageSize;
             int fileOffset = noffH.initData.inFileAddr + j * PageSize;
-            executable->ReadAt(physBuffer, size, fileOffset);
+            executable->ReadAt(physBuffer, psize, fileOffset);
             startAddr += PageSize;
         }
     }
@@ -246,7 +247,7 @@ AddrSpace::virtualToPhysAddr(int virtualAddr){
     unsigned int virtualPageNum = (unsigned)virtualAddr/PageSize;
     unsigned int offset = virtualAddr%PageSize;
     unsigned int pageFrame = pageTable[virtualPageNum].physicalPage;
-    unsigned int physicalAddr = pageFrame*PageSize+offset;
+    unsigned int physicalAddr = pageFrame*PageSize + offset;
     return physicalAddr;
 
 }
