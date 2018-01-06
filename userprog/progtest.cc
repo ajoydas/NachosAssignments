@@ -37,6 +37,7 @@ int totalNumOfProcess = 10;
 void
 StartProcess(const char *filename)
 {
+    DEBUG('a', "Trying to execute Process name:%s\n", filename);
     OpenFile *executable = fileSystem->Open(filename);
 
     if (executable == NULL) {
@@ -49,8 +50,8 @@ StartProcess(const char *filename)
     syncConsole = new SyncConsole();
 
     currentThread->space = new AddrSpace(executable);
-    int pid = processTable->Alloc(currentThread);
-    DEBUG('a', "Init process with Pid = %d created.\n",pid);
+    currentThread->spaceId = processTable->Alloc(currentThread);
+    DEBUG('a', "Init process with Pid = %d created.\n", currentThread->spaceId);
 
     delete executable;			// close file
 

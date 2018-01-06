@@ -950,7 +950,8 @@ translate.o: ../machine/translate.cc /usr/include/stdc-predef.h \
  ../machine/machine.h ../threads/scheduler.h ../threads/list.h \
  ../machine/interrupt.h ../threads/list.h ../machine/stats.h \
  ../machine/timer.h ../threads/../machine/interrupt.h \
- ../threads/../machine/stats.h ../threads/../machine/timer.h
+ ../threads/../machine/stats.h ../threads/../machine/timer.h \
+ ../machine/../threads/system.h
 memorymanager.o: ../userprog/memorymanager.cc /usr/include/stdc-predef.h \
  ../userprog/memorymanager.h ../userprog/bitmap.h ../threads/copyright.h \
  ../threads/utility.h ../threads/copyright.h ../machine/sysdep.h \

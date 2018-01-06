@@ -101,7 +101,7 @@ AddrSpace::AddrSpace(OpenFile *executable)
         pageTable[i].virtualPage = i;	// for now, virtual page # = phys page #
 
         int physicalPage = memoryManager->AllocPage();
-        DEBUG('a',"VPN: %d PPN: %d\n", i, physicalPage);
+        DEBUG('m',"VPN: %d PPN: %d\n", i, physicalPage);
 
         if(physicalPage == -1){
             for(int j=0; j <pages.size();j++)

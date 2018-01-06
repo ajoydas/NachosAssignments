@@ -76,7 +76,9 @@ void SysCallWriteHandler(int buffer, int size);
 void forkFuncForProgram(int pid) {
     currentThread->space->InitRegisters();		// set the initial register values
     currentThread->space->RestoreState();		// load page table register
+    DEBUG('a', "Forking new thread with pid: %d", pid);
     machine->Run();
+    ASSERT(false);
 }
 
 SpaceId Exec(char *name) {
@@ -88,10 +90,10 @@ SpaceId Exec(char *name) {
         thread->space =  new AddrSpace(executable);
         int pid =  processTable->Alloc(thread);
         thread->spaceId = pid;
-        DEBUG('a', "Exec from current thread -> executable %s with Pid: %d\n", name, pid);
+        DEBUG('a', "Current thread %d-> initiating %s with Pid: %d\n", currentThread->spaceId, name, pid);
         if(pid == 0)
         {
-            printf("Process creation failed! Maximum process limit exceeded.");
+            printf("Process creation failed! Maximum process limit exceeded.\n");
             ASSERT(false);
         }else {
             thread->Fork(reinterpret_cast<VoidFunctionPtr>(forkFuncForProgram), reinterpret_cast<void *>(pid));
@@ -177,11 +179,11 @@ void SysCallExecHandler(int arg1) {
         machine->ReadMem(arg1 + i, 1, (int*)&filename[i]);
     }while(filename[i++] != '\0');
 
-    DEBUG('a', "Trying to execute Process name: %s", filename);
+    DEBUG('a', "Trying to execute Process name: %s\n", filename);
     int pid = Exec(filename);
     if(pid == -1)
     {
-        printf("File %s not found.",filename);
+        printf("File %s not found.\n",filename);
         ASSERT(false);
     }
     else
@@ -214,18 +216,21 @@ void SysCallExecHandler(int arg1) {
 void SysCallExitHandler() {
     int status = machine->ReadRegister(4);
 //    Exit(arg);
-    DEBUG('a', "Exit Code: %d", status);
+    printf("Exit Code: %d\n", status);
+    DEBUG('a', "From current threadId: %d\n", currentThread->spaceId);
     for(int i=0; i< machine->pageTableSize;i++)
     {
+        DEBUG('m', "Freeing virtual: %d physical: %d\n",machine->pageTable[i].virtualPage,
+              machine->pageTable[i].physicalPage);
         memoryManager->FreePage(machine->pageTable[i].physicalPage);
     }
 
     processTable->Release(currentThread->spaceId);
     if(processTable->numberOfRunningProcess() == 0) {
-        printf("No more processes to run. Halting.....");
+        printf("No more processes to run. Halting.....\n");
         interrupt->Halt();
     } else{
-        DEBUG('a',"System call Exit for Pid: %d",currentThread->spaceId);
+        DEBUG('a',"System call Exit for Pid: %d\n",currentThread->spaceId);
         currentThread->Finish();
     }
     forwardPC();
@@ -238,9 +243,9 @@ int Read(char *buffer, int size, OpenFileId id)
 }
 
 void SysCallReadHandler(int buffer, int size) {
-    DEBUG('a', "Reading from buffer: %s of size:", (char *) buffer, size);
+    DEBUG('a', "Reading from buffer: %s of size:%d\n", (char *) buffer, size);
     int bytesRead = Read((char*)buffer, size, 0);
-    DEBUG('a', "Read from buffer: %s of size:", (char *) buffer, bytesRead);
+    DEBUG('a', "Read from buffer: %s of size:%d\n", (char *) buffer, bytesRead);
     machine->WriteRegister(2, bytesRead);
     forwardPC();
 }
@@ -251,9 +256,9 @@ void Write(char *buffer, int size, OpenFileId id){
 }
 
 void SysCallWriteHandler(int buffer, int size) {
-    DEBUG('a', "Writing to buffer: %s of size:", (char *) buffer, size);
+    DEBUG('a', "Writing to buffer: %s of size:%d\n", (char *) buffer, size);
     Write((char *) buffer, size, 0);
-    DEBUG('a', "Wrote to buffer: %s of size:", (char *) buffer, size);
+    DEBUG('a', "Wrote to buffer: %s of size:%d\n", (char *) buffer, size);
     machine->WriteRegister(2, 1);
     forwardPC();
 }

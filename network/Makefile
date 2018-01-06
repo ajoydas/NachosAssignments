@@ -989,7 +989,7 @@ translate.o: ../machine/translate.cc /usr/include/stdc-predef.h \
  ../threads/../machine/stats.h ../threads/../machine/timer.h \
  ../filesys/synchdisk.h ../machine/disk.h ../threads/synch.h \
  ../network/post.h ../machine/network.h ../threads/synchlist.h \
- ../threads/synch.h
+ ../threads/synch.h ../machine/../threads/system.h
 memorymanager.o: ../userprog/memorymanager.cc /usr/include/stdc-predef.h \
  ../userprog/memorymanager.h ../userprog/bitmap.h ../threads/copyright.h \
  ../threads/utility.h ../threads/copyright.h ../machine/sysdep.h \

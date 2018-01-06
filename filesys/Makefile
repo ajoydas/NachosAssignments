@@ -963,7 +963,8 @@ translate.o: ../machine/translate.cc /usr/include/stdc-predef.h \
  ../machine/interrupt.h ../threads/list.h ../machine/stats.h \
  ../machine/timer.h ../threads/../machine/interrupt.h \
  ../threads/../machine/stats.h ../threads/../machine/timer.h \
- ../filesys/synchdisk.h ../machine/disk.h ../threads/synch.h
+ ../filesys/synchdisk.h ../machine/disk.h ../threads/synch.h \
+ ../machine/../threads/system.h
 memorymanager.o: ../userprog/memorymanager.cc /usr/include/stdc-predef.h \
  ../userprog/memorymanager.h ../userprog/bitmap.h ../threads/copyright.h \
  ../threads/utility.h ../threads/copyright.h ../machine/sysdep.h \
