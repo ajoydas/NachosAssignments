@@ -17,7 +17,7 @@ private:
 
 public:
     SyncConsole();
-    int Read(char *buffer, int size, OpenFileId id);
-    void Write(char *buffer, int size, OpenFileId id);
+    int Read(int buffer, int size, OpenFileId id);
+    void Write(int buffer, int size, OpenFileId id);
 };
 #endif //CODE_SYNCCONSOLE_H

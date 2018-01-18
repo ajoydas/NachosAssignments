@@ -1,0 +1,170 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/coff.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/coff2flat.c
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/copyright.h
+filehdr.h
+-
+aouthdr.h
+-
+scnhdr.h
+-
+reloc.h
+-
+syms.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+limits.h
+-
+stdio.h
+-
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/coff2noff.c
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/copyright.h
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+limits.h
+-
+stdio.h
+-
+stdlib.h
+-
+coff.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/coff.h
+noff.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/noff.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/d.c
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/copyright.h
+instr.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/instr.h
+encode.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/encode.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/disasm.c
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/copyright.h
+stdio.h
+-
+filehdr.h
+-
+scnhdr.h
+-
+syms.h
+-
+ldfcn.h
+-
+int.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/int.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/encode.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/copyright.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/execute.c
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/copyright.h
+stdio.h
+-
+instr.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/instr.h
+encode.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/encode.h
+int.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/int.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/instr.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/copyright.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/int.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/copyright.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/main.c
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/copyright.h
+stdio.h
+-
+filehdr.h
+-
+scnhdr.h
+-
+syms.h
+-
+ldfcn.h
+-
+int.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/int.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/noff.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/opstrings.c
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/copyright.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/out.c
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/copyright.h
+filehdr.h
+-
+aouthdr.h
+-
+scnhdr.h
+-
+reloc.h
+-
+syms.h
+-
+stdio.h
+-
+varargs.h
+-
+d.c
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/d.c
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/system.c
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/copyright.h
+stdio.h
+-
+syscall.h
+-
+int.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/int.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/test/halt.c
+syscall.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/test/syscall.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/test/matmult.c
+syscall.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/test/syscall.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/test/shell.c
+syscall.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/test/syscall.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/test/sort.c
+syscall.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/test/syscall.h
+

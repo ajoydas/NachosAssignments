@@ -53,7 +53,7 @@ StartProcess(const char *filename)
     currentThread->spaceId = processTable->Alloc(currentThread);
     DEBUG('a', "Init process with Pid = %d created.\n", currentThread->spaceId);
 
-    delete executable;			// close file
+    //delete executable;			// close file
 
     currentThread->space->InitRegisters();		// set the initial register values
     currentThread->space->RestoreState();		// load page table register

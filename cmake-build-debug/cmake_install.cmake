@@ -1,4 +1,4 @@
-# Install script for directory: /media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 2/code
+# Install script for directory: /media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

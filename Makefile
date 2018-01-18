@@ -22,9 +22,13 @@ all:
 	cd test; make all
 
 # don't delete executables in "test" in case there is no cross-compiler
+#clean:
+#	$(SH) -c "rm -f */{core,nachos,DISK,swtch.s} bin/{coff2flat,coff2noff,disassemble,out,*.o} \
+#	filesys/*.o machine/*.o network/*.o threads/*.o userprog/*.o vm/*.o"
+
 clean:
-	$(SH) -c "rm -f */{core,nachos,DISK,swtch.s} bin/{coff2flat,coff2noff,disassemble,out,*.o} \
-	filesys/*.o machine/*.o network/*.o threads/*.o userprog/*.o vm/*.o"
+	$(SH) -c "rm -f */{core,nachos,DISK,*.o,swtch.s} test/*.coff bin/{coff2flat,coff2noff,disassemble,out}"
+	$(SH) -c "rm -f -r test/_"
 
 print:
 	$(SH) -c "$(LPR) Makefile* */Makefile"

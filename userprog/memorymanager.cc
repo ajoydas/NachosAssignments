@@ -31,6 +31,13 @@ bool MemoryManager::PageIsAllocated(int physPageNum) {
     return res;
 }
 
+int MemoryManager::NumOfFreePage() {
+    memoryLock->Acquire();
+    int num = bitMap->NumClear();
+    memoryLock->Release();
+    return num;
+}
+
 MemoryManager::~MemoryManager() {
     delete bitMap;
 }

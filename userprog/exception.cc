@@ -113,12 +113,13 @@ SpaceId Exec(char *name) {
 void
 ExceptionHandler(ExceptionType which)
 {
-    DEBUG('a', "System Call happened.\n");
     int type = machine->ReadRegister(2);
     int arg1 = machine->ReadRegister(4);
     int arg2 = machine->ReadRegister(5);
     int arg3 = machine->ReadRegister(6);
     int arg4 = machine->ReadRegister(7);
+
+    DEBUG('a', "System Call happened.\n %d %d\n", which, type);
 
     switch (which)
     {
@@ -143,12 +144,28 @@ ExceptionHandler(ExceptionType which)
 
                 case SC_Write:
                     SysCallWriteHandler(arg1, arg2);
+                    break;
 
                 default:
+                    printf("Unexpected syscall happened, %d %d\n", which, type);
                     break;
             }
             break;
+        case PageFaultException:
+            {
+                stats->numPageFaults++;
+                DEBUG('v', "Page fault exception for process: %d\n", currentThread->spaceId);
+                int faultAddr = machine->ReadRegister(39);
+                int physPageNo;
+                if (memoryManager->NumOfFreePage() > 0) {
+                    physPageNo = memoryManager->AllocPage();
 
+                } else {
+
+                }
+                currentThread->space->loadIntoFreePage(faultAddr, physPageNo);
+            }
+            break;
         default:
             printf("Unexpected user mode exception %d %d\n", which, type);
             ASSERT(false);
@@ -223,9 +240,11 @@ void SysCallExitHandler() {
     DEBUG('a', "From current threadId: %d\n", currentThread->spaceId);
     for(int i=0; i< machine->pageTableSize;i++)
     {
-        DEBUG('m', "Freeing virtual: %d physical: %d\n",machine->pageTable[i].virtualPage,
-              machine->pageTable[i].physicalPage);
-        memoryManager->FreePage(machine->pageTable[i].physicalPage);
+        if(machine->pageTable[i].valid){
+            DEBUG('v', "Freeing virtual: %d physical: %d\n",machine->pageTable[i].virtualPage,
+                  machine->pageTable[i].physicalPage);
+            memoryManager->FreePage(machine->pageTable[i].physicalPage);
+        }
     }
 
     processTable->Release(currentThread->spaceId);
@@ -240,28 +259,28 @@ void SysCallExitHandler() {
 }
 
 
-int Read(char *buffer, int size, OpenFileId id)
+int Read(int buffer, int size, OpenFileId id)
 {
     syncConsole->Read(buffer, size, id);
 }
 
 void SysCallReadHandler(int buffer, int size) {
-    DEBUG('a', "Reading from buffer: %s of size:%d\n", (char *) buffer, size);
-    int bytesRead = Read((char*)buffer, size, 0);
-    DEBUG('a', "Read from buffer: %s of size:%d\n", (char *) buffer, bytesRead);
+    DEBUG('a', "Reading from buffer: %d of size:%d\n", buffer, size);
+    int bytesRead = Read(buffer, size, 0);
+    DEBUG('a', "Read from buffer: %d of size:%d\n", buffer, bytesRead);
     machine->WriteRegister(2, bytesRead);
     forwardPC();
 }
 
 
-void Write(char *buffer, int size, OpenFileId id){
+void Write(int buffer, int size, OpenFileId id){
     syncConsole->Write(buffer, size, id);
 }
 
 void SysCallWriteHandler(int buffer, int size) {
-    DEBUG('a', "Writing to buffer: %s of size:%d\n", (char *) buffer, size);
-    Write((char *) buffer, size, 0);
-    DEBUG('a', "Wrote to buffer: %s of size:%d\n", (char *) buffer, size);
+    DEBUG('a', "Writing to buffer: %d of size:%d\n", buffer, size);
+    Write(buffer, size, 0);
+    DEBUG('a', "Wrote to buffer: %d of size:%d\n", buffer, size);
     machine->WriteRegister(2, 1);
     forwardPC();
 }

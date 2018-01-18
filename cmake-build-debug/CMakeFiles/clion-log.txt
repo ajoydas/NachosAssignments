@@ -1,4 +1,4 @@
-"/media/ajoy/Backup/UBUNTU SOFTWARE/apps/CLion/ch-0/173.4127.32/bin/cmake/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 2/code"
+"/media/ajoy/Backup/UBUNTU SOFTWARE/apps/CLion/ch-0/173.4127.32/bin/cmake/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code"
 -- The C compiler identification is GNU 5.4.0
 -- The CXX compiler identification is GNU 5.4.0
 -- Check for working C compiler: /usr/bin/cc
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 2/code/cmake-build-debug
+-- Build files have been written to: /media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/cmake-build-debug

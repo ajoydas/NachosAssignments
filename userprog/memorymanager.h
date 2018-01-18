@@ -26,6 +26,7 @@ public:
 
     bool PageIsAllocated(int physPageNum);
 
+    int NumOfFreePage();
 };
 
 

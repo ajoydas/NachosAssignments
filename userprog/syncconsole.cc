@@ -26,7 +26,7 @@ SyncConsole::SyncConsole(){
 }
 
 
-int SyncConsole::Read(char *buffer, int size, OpenFileId id) {
+int SyncConsole::Read(int buffer, int size, OpenFileId id) {
     consoleLock->Acquire();
     DEBUG('a', "Reading from SyncConsole.....\n");
     char data;
@@ -35,15 +35,13 @@ int SyncConsole::Read(char *buffer, int size, OpenFileId id) {
     for(int i=0; i< size; i++){
         syncReadAvail->P();
         data = console->GetChar();
-        dest = atoi(buffer + i);
-        if(data != '\n'){
-            machine->WriteMem(dest, 1, data);
-            DEBUG('a', "Dest :%d and buffer+i:%d\n", dest, atoi(buffer + i));
-            bytesRead++;
-        }
-        else
-        {
-            machine->WriteMem(dest, 1, NULL);
+        dest = buffer + i;
+
+        machine->WriteMem(dest, 1, data);
+        DEBUG('a', "Dest :%d and buffer+i:%d -- %c\n", dest, buffer + i, data);
+        bytesRead++;
+
+        if(data == '\n'){
             break;
         }
     }
@@ -51,14 +49,14 @@ int SyncConsole::Read(char *buffer, int size, OpenFileId id) {
     return bytesRead;
 }
 
-void SyncConsole::Write(char *buffer, int size, OpenFileId id) {
+void SyncConsole::Write(int buffer, int size, OpenFileId id) {
     consoleLock->Acquire();
-    DEBUG('a', "Writing in SyncConsole.....\n");
+    DEBUG('a', "Writing in SyncConsole..... %d , size: %d\n", buffer,size);
     for(int i=0; i<size; i++){
-        int src = atoi(buffer + i);
-        int* dataInt;
-        machine->ReadMem(src, 1, dataInt);
-        char data = *((char *) dataInt);
+        int src = buffer + i;
+        int dataInt;
+        machine->ReadMem(src, 1, &dataInt);
+        char data = (char) dataInt;
         console->PutChar(data);
         if(data == '\0' || data =='\n') break;
         syncWriteDone->P();

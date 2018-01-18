@@ -17,11 +17,15 @@
 #include "filesys.h"
 #include "../machine/translate.h"
 #include "../filesys/openfile.h"
+#include "../bin/noff.h"
+
 
 #define UserStackSize		1024 	// increase this as necessary!
 
 class AddrSpace {
   public:
+    NoffHeader noffH;
+
     AddrSpace(OpenFile *executable);	// Create an address space,
 					// initializing it with the program
 					// stored in the file "executable"
@@ -33,12 +37,17 @@ class AddrSpace {
     void SaveState();			// Save/restore address space-specific
     void RestoreState();		// info on a context switch 
 
-  private:
+    void loadIntoFreePage(int vpn, int physicalPageNo);
+
+private:
+    OpenFile *executable;
+
     TranslationEntry *pageTable;	// Assume linear page table translation
 					// for now!
     unsigned int numPages;		// Number of pages in the virtual 
 					// address space
     unsigned int virtualToPhysAddr(int virtualAddr);
+
 };
 
 #endif // ADDRSPACE_H

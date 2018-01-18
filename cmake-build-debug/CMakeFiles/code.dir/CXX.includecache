@@ -1,0 +1,666 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/noff.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/directory.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/utility.h
+filehdr.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/filehdr.h
+directory.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/directory.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/directory.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/copyright.h
+openfile.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/openfile.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/filehdr.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/copyright.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/system.h
+filehdr.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/filehdr.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/filehdr.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/copyright.h
+disk.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/disk.h
+bitmap.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/bitmap.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/filesys.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/copyright.h
+disk.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/disk.h
+bitmap.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/bitmap.h
+directory.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/directory.h
+filehdr.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/filehdr.h
+filesys.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/filesys.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/filesys.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/copyright.h
+openfile.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/openfile.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/fstest.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/utility.h
+filesys.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/filesys.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/system.h
+thread.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/thread.h
+disk.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/disk.h
+stats.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/stats.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/openfile.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/copyright.h
+filehdr.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/filehdr.h
+openfile.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/openfile.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/system.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/openfile.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/utility.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/synchdisk.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/copyright.h
+synchdisk.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/synchdisk.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/synchdisk.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/copyright.h
+disk.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/disk.h
+synch.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/synch.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/console.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+console.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/console.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/system.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/console.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/utility.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/disk.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+disk.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/disk.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/system.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/disk.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/utility.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/interrupt.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+interrupt.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/interrupt.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/system.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/interrupt.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+list.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/list.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/machine.cc
+cstdio
+-
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+machine.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/machine.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/system.h
+../threads/utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/utility.h
+sysdep.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/sysdep.h
+../threads/system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/machine.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/utility.h
+translate.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/translate.h
+disk.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/disk.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/mipssim.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+machine.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/machine.h
+mipssim.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/mipssim.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/system.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/mipssim.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/network.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/system.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/stats.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/utility.h
+stats.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/stats.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/stats.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/sysdep.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+stdio.h
+-
+string.h
+-
+signal.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+sys/file.h
+-
+sys/un.h
+-
+sys/mman.h
+-
+sys/time.h
+-
+sys/syscall.h
+-
+unistd.h
+-
+stdlib.h
+-
+unistd.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+sys/mman.h
+-
+interrupt.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/interrupt.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/system.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/sysdep.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/timer.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+timer.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/timer.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/system.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/timer.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/utility.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/translate.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+machine.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/machine.h
+addrspace.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/addrspace.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/system.h
+../threads/system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/translate.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/utility.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/network/nettest.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/network/copyright.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/network/system.h
+network.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/network/network.h
+post.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/network/post.h
+interrupt.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/network/interrupt.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/network/post.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/network/copyright.h
+post.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/network/post.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/network/post.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/network/copyright.h
+network.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/network/network.h
+synchlist.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/network/synchlist.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/consumer.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+list.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/list.h
+synch.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/synch.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/list.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/utility.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/main.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/utility.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.h
+cstdio
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/cstdio
+cstring
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/cstring
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/preemptive.cc
+preemptive.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/preemptive.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.h
+unistd.h
+-
+sys/ptrace.h
+-
+sys/wait.h
+-
+sys/user.h
+-
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/preemptive.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/producer.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+list.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/list.h
+synch.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/synch.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/scheduler.cc
+cstdio
+-
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+scheduler.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/scheduler.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/scheduler.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+list.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/list.h
+thread.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/thread.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/switch.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/synch.cc
+cstdio
+-
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+synch.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/synch.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.h
+../machine/interrupt.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/interrupt.h
+../machine/sysdep.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/sysdep.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/synch.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+thread.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/thread.h
+list.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/list.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.h
+preemptive.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/preemptive.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/utility.h
+thread.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/thread.h
+scheduler.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/scheduler.h
+interrupt.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/interrupt.h
+stats.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/stats.h
+timer.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/timer.h
+../machine/interrupt.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/interrupt.h
+../machine/stats.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/stats.h
+../machine/timer.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/timer.h
+machine.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/machine.h
+filesys.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/filesys.h
+synchdisk.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/synchdisk.h
+post.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/post.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/thread.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+thread.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/thread.h
+switch.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/switch.h
+synch.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/synch.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.h
+../machine/sysdep.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/sysdep.h
+../machine/interrupt.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/interrupt.h
+machine.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/machine.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/thread.h
+cstdio
+-
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/utility.h
+machine.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/machine.h
+addrspace.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/addrspace.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/threadtest.cc
+cstdio
+-
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.h
+producer.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/producer.h
+consumer.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/consumer.h
+synch.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/synch.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/utility.cc
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/utility.h
+stdarg.h
+-
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/utility.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/copyright.h
+sysdep.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/sysdep.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/addrspace.cc
+cstdio
+-
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/copyright.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/system.h
+addrspace.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/addrspace.h
+../machine/machine.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/machine.h
+../threads/utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/utility.h
+../machine/sysdep.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/sysdep.h
+../filesys/openfile.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/openfile.h
+memorymanager.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/memorymanager.h
+../machine/interrupt.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/interrupt.h
+../threads/system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.h
+../bin/noff.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/bin/noff.h
+vector
+-
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/addrspace.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/copyright.h
+filesys.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/filesys.h
+../machine/translate.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/translate.h
+../filesys/openfile.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/openfile.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/bitmap.cc
+cstdio
+-
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/copyright.h
+bitmap.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/bitmap.h
+../threads/utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/utility.h
+../machine/sysdep.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/sysdep.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/bitmap.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/copyright.h
+utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/utility.h
+openfile.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/openfile.h
+../filesys/openfile.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/openfile.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/exception.cc
+cstdio
+-
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/copyright.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/system.h
+syscall.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/syscall.h
+../machine/machine.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/machine.h
+../threads/utility.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/utility.h
+../threads/system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.h
+../filesys/openfile.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/openfile.h
+memorymanager.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/memorymanager.h
+addrspace.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/addrspace.h
+processtable.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/processtable.h
+../machine/sysdep.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/sysdep.h
+syncconsole.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/syncconsole.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/memorymanager.cc
+memorymanager.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/memorymanager.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/memorymanager.h
+bitmap.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/bitmap.h
+../threads/synch.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/synch.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/processtable.cc
+processtable.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/processtable.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/processtable.h
+bitmap.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/bitmap.h
+../threads/synch.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/synch.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/progtest.cc
+cstdio
+-
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/system.h
+console.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/console.h
+addrspace.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/addrspace.h
+synch.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/synch.h
+../filesys/openfile.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/filesys/openfile.h
+../machine/sysdep.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/sysdep.h
+memorymanager.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/memorymanager.h
+../machine/machine.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/machine.h
+../threads/system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/system.h
+../machine/console.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/console.h
+../threads/synch.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/synch.h
+processtable.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/processtable.h
+syncconsole.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/syncconsole.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/syncconsole.cc
+cstdlib
+-
+syncconsole.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/syncconsole.h
+system.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/system.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/syncconsole.h
+../threads/synch.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/threads/synch.h
+../machine/console.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/machine/console.h
+syscall.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/syscall.h
+
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/syscall.h
+copyright.h
+/media/ajoy/Backup/Drive/L3-T2/OsSessional/nachos/Assignment 3/code/userprog/copyright.h
+
