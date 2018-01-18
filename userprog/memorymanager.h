@@ -10,6 +10,19 @@
 #include "../threads/synch.h"
 #include "../machine/translate.h"
 
+
+class SwapSpace{
+public:
+    int virtualPageNo;
+    int processId;
+    char* swapPageData;
+    SwapSpace(){
+        processId = -1;
+        virtualPageNo = -1;
+        swapPageData = new char[PageSize];
+    }
+};
+
 class MemoryManager {
 private:
     int numPages;

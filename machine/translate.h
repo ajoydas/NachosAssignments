@@ -42,6 +42,8 @@ class TranslationEntry {
 			// page is modified.
 
     long time;
+
+    int swapPage;
 };
 
 #endif

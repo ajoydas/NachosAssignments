@@ -28,6 +28,9 @@ class Statistics {
 				// (this is also equal to # of
 				// user instructions executed)
 
+    int pageIns;
+    int pageOuts;
+
     int numDiskReads;		// number of disk read requests
     int numDiskWrites;		// number of disk write requests
     int numConsoleCharsRead;	// number of characters read from the keyboard

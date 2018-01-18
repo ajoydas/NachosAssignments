@@ -23,7 +23,17 @@
 #define UserStackSize		1024 	// increase this as necessary!
 
 class AddrSpace {
-  public:
+
+private:
+    OpenFile *executable;
+
+    TranslationEntry *pageTable;	// Assume linear page table translation
+    // for now!
+    unsigned int numPages;		// Number of pages in the virtual
+    // address space
+    unsigned int virtualToPhysAddr(int virtualAddr);
+
+public:
     NoffHeader noffH;
 
     AddrSpace(OpenFile *executable);	// Create an address space,
@@ -38,15 +48,13 @@ class AddrSpace {
     void RestoreState();		// info on a context switch 
 
     void loadIntoFreePage(int vpn, int physicalPageNo);
+    bool isSwapPageExists(int vpn);
 
-private:
-    OpenFile *executable;
+    void saveIntoSwapSpace(int vpn, int processId);
+    void loadFromSwapSpace(int vpn);
 
-    TranslationEntry *pageTable;	// Assume linear page table translation
-					// for now!
-    unsigned int numPages;		// Number of pages in the virtual 
-					// address space
-    unsigned int virtualToPhysAddr(int virtualAddr);
+    TranslationEntry *getPageTable();
+    int getNumPages();
 
 };
 

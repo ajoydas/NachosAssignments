@@ -60,6 +60,7 @@
 extern MemoryManager *memoryManager;
 extern ProcessTable *processTable;
 extern SyncConsole *syncConsole;
+extern long time;
 
 void SysCallHaltHandler();
 
@@ -163,10 +164,26 @@ ExceptionHandler(ExceptionType which)
 
                 } else {
                     physPageNo = memoryManager->AllocByForce();
-//                    memoryManager->processMap[physPageNo] = currentThread->spaceId;
-//                    memoryManager->entries[physPageNo] = &(machine->pageTable[vpn]);
+
+                    int processNo =  memoryManager->processMap[physPageNo];
+                    int virtNo = memoryManager->entries[physPageNo]->virtualPage;
+                    Thread* process = (Thread*)processTable->Get(processNo);
+                    TranslationEntry* table = process->space->getPageTable();
+                    if( table->swapPage == -1 || table[virtNo].dirty ){
+
+                        process->space->saveIntoSwapSpace(virtNo, processNo);
+
+                    }
+                    table[virtNo].valid = false;
+                    table[virtNo].physicalPage = -1;
+
+                    memoryManager->processMap[physPageNo] = currentThread->spaceId;
+                    memoryManager->entries[physPageNo] = &(machine->pageTable[vpn]);
                 }
-                currentThread->space->loadIntoFreePage(faultAddr, physPageNo);
+
+                printf("\n\n\n____global time_____%d\n\n\n",time);
+                currentThread->space->loadIntoFreePage(vpn*PageSize, physPageNo);
+
             }
             break;
         default:

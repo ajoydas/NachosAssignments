@@ -33,6 +33,7 @@ MemoryManager *memoryManager;
 MemoryManager *swapMemoryManager;
 ProcessTable *processTable;
 SyncConsole *syncConsole;
+SwapSpace* swapSpace;
 int totalNumOfProcess = 10;
 long time= 0;
 int NumSwapPages = 512;
@@ -49,6 +50,8 @@ void  StartProcess(const char *filename)
 
     memoryManager = new MemoryManager(NumPhysPages);
     swapMemoryManager = new MemoryManager(NumSwapPages);
+    swapSpace = new SwapSpace[NumSwapPages];
+
     processTable = new ProcessTable(totalNumOfProcess);
     syncConsole = new SyncConsole();
 

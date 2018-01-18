@@ -10,8 +10,8 @@ MemoryManager::MemoryManager(int numPages)
     this->numPages = numPages;
     bitMap = new BitMap(numPages);
     memoryLock = new Lock("Memory Lock");
-//    processMap = new int[numPages];
-//    entries = new TranslationEntry* [numPages];
+    processMap = new int[numPages];
+    entries = new TranslationEntry* [numPages];
 }
 
 int MemoryManager::AllocPage() {
@@ -25,9 +25,11 @@ int MemoryManager::AllocPage() {
 int MemoryManager::Alloc(int processNo, TranslationEntry *entry) {
     memoryLock->Acquire();
     int allocated =  bitMap->Find();
-//    printf("allocated: %d", allocated);
-//    processMap[allocated] = processNo;
-//    entries[allocated] = entry;
+    printf("allocated: %d", allocated)
+            ;
+    processMap[allocated] = processNo;
+    entries[allocated] = entry;
+
     memoryLock->Release();
     return allocated;
 }

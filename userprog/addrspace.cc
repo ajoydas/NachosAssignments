@@ -29,6 +29,12 @@
 #include <vector>
 
 using namespace std;
+extern MemoryManager *memoryManager;
+extern MemoryManager* swapMemoryManager;
+extern SwapSpace* swapSpace;
+
+
+
 //----------------------------------------------------------------------
 // SwapHeader
 // 	Do little endian to big endian conversion on the bytes in the 
@@ -66,7 +72,6 @@ SwapHeader (NoffHeader *noffH)
 //	"executable" is the file containing the object code to load into memory
 //----------------------------------------------------------------------
 
-extern MemoryManager *memoryManager;
 AddrSpace::AddrSpace(OpenFile *exec)
 {
     this->executable = exec;
@@ -265,6 +270,56 @@ void AddrSpace::loadIntoFreePage(int addr, int physicalPageNo){
 
     }
 }
+
+TranslationEntry*
+AddrSpace::getPageTable(){
+    return pageTable;
+}
+int
+AddrSpace::getNumPages(){
+    return numPages;
+}
+
+
+void
+AddrSpace::loadFromSwapSpace(int vpn){
+    int physAddr = pageTable[vpn].physicalPage*PageSize;
+    int swapPageNo = pageTable[vpn].swapPage;
+    IntStatus oldLevel = interrupt->SetLevel(IntOff);
+    bcopy(swapSpace[swapPageNo].swapPageData, &machine->mainMemory[physAddr], PageSize);
+    stats->pageIns++;
+    interrupt->SetLevel(oldLevel);
+}
+
+void
+AddrSpace::saveIntoSwapSpace(int vpn, int processId){
+    int freeSwapPage;
+    if(isSwapPageExists(vpn)){
+        freeSwapPage = pageTable[vpn].swapPage;
+    }
+    else {
+        freeSwapPage = swapMemoryManager->AllocPage();
+        pageTable[vpn].swapPage = freeSwapPage;
+    }
+
+    swapSpace[freeSwapPage].virtualPageNo = vpn;
+    swapSpace[freeSwapPage].processId = processId;
+    int physAddr = pageTable[vpn].physicalPage*PageSize;
+    IntStatus oldLevel = interrupt->SetLevel(IntOff);
+    bcopy(&machine->mainMemory[physAddr], swapSpace[freeSwapPage].swapPageData, PageSize);
+    stats->pageOuts++;
+    interrupt->SetLevel(oldLevel);
+    printf("\n____saving into swap space____\n");
+
+
+}
+
+bool
+AddrSpace::isSwapPageExists(int vpn){
+    return pageTable[vpn].swapPage != -1;
+}
+
+
 
 //----------------------------------------------------------------------
 // AddrSpace::~AddrSpace
