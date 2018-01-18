@@ -124,6 +124,9 @@ AddrSpace::AddrSpace(OpenFile *exec)
         pageTable[i].readOnly = false;  // if the code segment was entirely on
 					// a separate page, we could set its 
 					// pages to be read-only
+
+        pageTable[i].swapPage = -1;
+        pageTable[i].time = 0;
     }
     
 // zero out the entire address space, to zero the unitialized data segment 
@@ -181,7 +184,62 @@ void AddrSpace::loadIntoFreePage(int addr, int physicalPageNo){
 
     DEBUG('v',"\n");
     DEBUG('v',"Requested addr = %d\n",addr);
-    bzero(&machine -> mainMemory[(pageTable[vpn].physicalPage) * PageSize], PageSize);
+
+    if(isSwapPageExists(vpn)){
+        printf("swap page no = %d\n", pageTable[vpn].swapPage);
+        loadFromSwapSpace(vpn);
+        printf("\n\n______________Loading from swap memory_________\n\n");
+        return;
+    }
+
+    int codeOffset=0, codeSize=0, initDataOffset=0, initDataSize=0, uninitDataOffset=0, uninitDataSize=0;
+    int physAddr = physicalPageNo*PageSize;
+    if(noffH.code.virtualAddr <= addr && (noffH.code.virtualAddr + noffH.code.size) > addr){
+        codeOffset = (addr - noffH.code.virtualAddr)/PageSize;
+        codeSize = noffH.code.size - codeOffset*PageSize;
+        codeSize = min(codeSize, PageSize);
+        if(noffH.code.size > 0){
+            printf("___code = %d___\n", codeSize);
+            executable->ReadAt(&machine->mainMemory[physAddr], codeSize, noffH.code.inFileAddr + codeOffset*PageSize);
+        }
+        if(codeSize < PageSize){
+            initDataSize = PageSize - codeSize;
+            initDataSize = min(initDataSize, noffH.initData.size);
+            printf("___code mid init data = %d___\n", initDataSize);
+            if(noffH.initData.size > 0){
+                executable->ReadAt(&machine->mainMemory[physAddr + codeSize], initDataSize, noffH.initData.inFileAddr);
+            }
+        }
+        if((codeSize + initDataSize) < PageSize){
+            int freePageSize = PageSize - codeSize - initDataSize;
+            printf("___code mid uninit data = %d___\n", freePageSize);
+            bzero(&machine->mainMemory[physAddr + codeSize + initDataSize], freePageSize);
+        }
+    }
+    else if(noffH.initData.virtualAddr <= addr && (noffH.initData.virtualAddr + noffH.initData.size) > addr){
+        initDataOffset = (addr - noffH.initData.virtualAddr)/PageSize;
+        initDataSize = min(noffH.initData.size - initDataOffset*PageSize, PageSize);
+        if(noffH.initData.size > 0 ){
+            printf("___init data = %d___\n", initDataSize);
+            executable->ReadAt(&machine->mainMemory[physAddr], initDataSize, noffH.initData.inFileAddr + initDataOffset*PageSize);
+        }
+        if(initDataSize < PageSize){
+            int freePageSize = PageSize - initDataSize;
+            printf("___init mid uninit data = %d___\n", freePageSize);
+            bzero(&machine->mainMemory[physAddr + initDataSize], freePageSize);
+        }
+    }
+    else if(noffH.uninitData.virtualAddr <= addr && (noffH.uninitData.virtualAddr + noffH.uninitData.size) > addr){
+        printf("___uninit  data = %d___\n", PageSize);
+        bzero(&machine->mainMemory[physAddr], PageSize);
+    }
+    else{
+        printf("___zero = %d___\n", PageSize);
+        bzero(&machine->mainMemory[physAddr], PageSize);
+    }
+    printf("\n\n\n");
+    return;
+    /*bzero(&machine -> mainMemory[(pageTable[vpn].physicalPage) * PageSize], PageSize);
 
 
     if(noffH.code.size>0)
@@ -268,7 +326,7 @@ void AddrSpace::loadIntoFreePage(int addr, int physicalPageNo){
 
         }
 
-    }
+    }*/
 }
 
 TranslationEntry*
