@@ -156,12 +156,15 @@ ExceptionHandler(ExceptionType which)
                 stats->numPageFaults++;
                 DEBUG('v', "Page fault exception for process: %d\n", currentThread->spaceId);
                 int faultAddr = machine->ReadRegister(39);
+                int vpn = faultAddr/PageSize;
                 int physPageNo;
                 if (memoryManager->NumOfFreePage() > 0) {
-                    physPageNo = memoryManager->AllocPage();
+                    physPageNo = memoryManager->Alloc(currentThread->spaceId, machine->pageTable[vpn]);
 
                 } else {
-
+                    physPageNo = memoryManager->AllocByForce();
+                    memoryManager->processMap[physPageNo] = currentThread->spaceId;
+                    memoryManager->entries[physPageNo] = machine->pageTable[vpn];
                 }
                 currentThread->space->loadIntoFreePage(faultAddr, physPageNo);
             }

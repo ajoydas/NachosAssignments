@@ -8,6 +8,7 @@
 
 #include "bitmap.h"
 #include "../threads/synch.h"
+#include "../machine/translate.h"
 
 class MemoryManager {
 private:
@@ -16,6 +17,9 @@ private:
     Lock *memoryLock;
 
 public:
+    int *processMap;
+    TranslationEntry *entries;
+
     MemoryManager(int numPages);
 
     ~MemoryManager();
@@ -27,6 +31,10 @@ public:
     bool PageIsAllocated(int physPageNum);
 
     int NumOfFreePage();
+
+    int Alloc(int processNo, TranslationEntry &entry);
+
+    int AllocByForce();
 };
 
 

@@ -85,6 +85,7 @@ ShortToMachine(unsigned short shortword) { return ShortToHost(shortword); }
 //	"value" -- the place to write the result
 //----------------------------------------------------------------------
 
+extern long time;
 bool
 Machine::ReadMem(int addr, int size, int *value)
 {
@@ -250,6 +251,12 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
     entry->use = true;		// set the use, dirty bits
     if (writing)
 	entry->dirty = true;
+
+
+    time++;
+    entry->time= time;
+
+
     *physAddr = pageFrame * PageSize + offset;
     ASSERT((*physAddr >= 0) && ((*physAddr + size) <= MemorySize));
     DEBUG('m', "phys addr = 0x%x\n", *physAddr);

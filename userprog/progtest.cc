@@ -33,7 +33,7 @@ MemoryManager *memoryManager;
 ProcessTable *processTable;
 SyncConsole *syncConsole;
 int totalNumOfProcess = 10;
-
+long time= 0;
 void
 StartProcess(const char *filename)
 {

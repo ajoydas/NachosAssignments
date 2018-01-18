@@ -1011,7 +1011,7 @@ memorymanager.o: ../userprog/memorymanager.cc /usr/include/stdc-predef.h \
  ../machine/translate.h ../machine/disk.h ../userprog/addrspace.h \
  ../filesys/filesys.h ../filesys/openfile.h \
  ../userprog/../machine/translate.h ../userprog/../bin/noff.h \
- ../userprog/../threads/list.h
+ ../userprog/../threads/list.h ../userprog/../machine/sysdep.h
 processtable.o: ../userprog/processtable.cc /usr/include/stdc-predef.h \
  ../userprog/processtable.h ../userprog/bitmap.h ../threads/copyright.h \
  ../threads/utility.h ../threads/copyright.h ../machine/sysdep.h \
