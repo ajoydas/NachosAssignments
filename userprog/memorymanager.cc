@@ -38,16 +38,15 @@ int MemoryManager::AllocByForce() {
     memoryLock->Acquire();
     int allocated = Random()%numPages;
     DEBUG('v', "Randomly allocated page: %d\n", allocated);
-//
-//    long least_time = entries[allocated]->time;
-//    for (int i = 0; i < numPages; i++) {
-//        if(entries[i]->time < least_time && !entries[i]->dirty){
-//            least_time = entries[i]->time;
-//            allocated= i;
-//        }
-//        DEBUG('v', "Least time: %d, compared time: %d\n", least_time, entries[i]->time);
-//    }
 
+    long least_time = entries[allocated]->time;
+    for (int i = 0; i < numPages; i++) {
+        if(entries[i]->time < least_time && !entries[i]->dirty){
+            least_time = entries[i]->time;
+            allocated= i;
+        }
+        DEBUG('v', "Least time: %ld, compared time: %ld\n", least_time, entries[i]->time);
+    }
 
     memoryLock->Release();
     return allocated;

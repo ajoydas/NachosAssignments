@@ -13,15 +13,14 @@
   <component name="ChangeListManager">
     <list default="true" id="56e38099-bc2b-480a-868e-8081e7f0b295" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/filesys/addrspace.o" afterPath="$PROJECT_DIR$/filesys/addrspace.o" />
+      <change beforePath="$PROJECT_DIR$/filesys/memorymanager.o" afterPath="$PROJECT_DIR$/filesys/memorymanager.o" />
       <change beforePath="$PROJECT_DIR$/filesys/nachos" afterPath="$PROJECT_DIR$/filesys/nachos" />
-      <change beforePath="$PROJECT_DIR$/network/addrspace.o" afterPath="$PROJECT_DIR$/network/addrspace.o" />
+      <change beforePath="$PROJECT_DIR$/network/memorymanager.o" afterPath="$PROJECT_DIR$/network/memorymanager.o" />
       <change beforePath="$PROJECT_DIR$/network/nachos" afterPath="$PROJECT_DIR$/network/nachos" />
-      <change beforePath="$PROJECT_DIR$/userprog/.fuse_hidden000021510000000c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/userprog/addrspace.cc" afterPath="$PROJECT_DIR$/userprog/addrspace.cc" />
-      <change beforePath="$PROJECT_DIR$/userprog/addrspace.o" afterPath="$PROJECT_DIR$/userprog/addrspace.o" />
+      <change beforePath="$PROJECT_DIR$/userprog/memorymanager.cc" afterPath="$PROJECT_DIR$/userprog/memorymanager.cc" />
+      <change beforePath="$PROJECT_DIR$/userprog/memorymanager.o" afterPath="$PROJECT_DIR$/userprog/memorymanager.o" />
       <change beforePath="$PROJECT_DIR$/userprog/nachos" afterPath="$PROJECT_DIR$/userprog/nachos" />
-      <change beforePath="$PROJECT_DIR$/vm/addrspace.o" afterPath="$PROJECT_DIR$/vm/addrspace.o" />
+      <change beforePath="$PROJECT_DIR$/vm/memorymanager.o" afterPath="$PROJECT_DIR$/vm/memorymanager.o" />
       <change beforePath="$PROJECT_DIR$/vm/nachos" afterPath="$PROJECT_DIR$/vm/nachos" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -38,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="addrspace.cc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addrspace.cc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/userprog/addrspace.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="363" column="40" lean-forward="false" selection-start-line="363" selection-start-column="40" selection-end-line="363" selection-end-column="40" />
+            <state relative-caret-position="800">
+              <caret line="366" column="23" lean-forward="false" selection-start-line="366" selection-start-column="23" selection-end-line="366" selection-end-column="23" />
               <folding>
                 <element signature="e#704#721#0" expanded="true" />
                 <element signature="e#3943#4368#0" expanded="false" />
@@ -76,17 +75,17 @@
         <entry file="file://$PROJECT_DIR$/machine/machine.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
-              <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+              <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="memorymanager.cc" pinned="false" current-in-tab="false">
+      <file leaf-file-name="memorymanager.cc" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/userprog/memorymanager.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="39" column="57" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="57" />
+            <state relative-caret-position="216">
+              <caret line="43" column="62" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -206,11 +205,11 @@
         <option value="$PROJECT_DIR$/userprog/memorymanager.h" />
         <option value="$PROJECT_DIR$/userprog/progtest.cc" />
         <option value="$PROJECT_DIR$/machine/stats.h" />
-        <option value="$PROJECT_DIR$/userprog/memorymanager.cc" />
         <option value="$PROJECT_DIR$/userprog/exception.cc" />
         <option value="$PROJECT_DIR$/userprog/addrspace.h" />
-        <option value="$PROJECT_DIR$/machine/machine.h" />
         <option value="$PROJECT_DIR$/userprog/addrspace.cc" />
+        <option value="$PROJECT_DIR$/machine/machine.h" />
+        <option value="$PROJECT_DIR$/userprog/memorymanager.cc" />
       </list>
     </option>
   </component>
@@ -356,12 +355,12 @@
       <workItem from="1515509765516" duration="1295000" />
       <workItem from="1515916719884" duration="684000" />
       <workItem from="1516253847977" duration="607000" />
-      <workItem from="1516264975814" duration="18697000" />
+      <workItem from="1516264975814" duration="19604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131498000" />
+    <option name="totallyTimeSpent" value="132405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1431" y="-4" width="1215" height="1028" extended-state="6" />
@@ -713,22 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/userprog/memorymanager.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" column="57" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine/machine.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/userprog/progtest.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -748,14 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/userprog/addrspace.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/machine/stats.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
@@ -766,13 +741,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/userprog/addrspace.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="363" column="40" lean-forward="false" selection-start-line="363" selection-start-column="40" selection-end-line="363" selection-end-column="40" />
+        <state relative-caret-position="800">
+          <caret line="366" column="23" lean-forward="false" selection-start-line="366" selection-start-column="23" selection-end-line="366" selection-end-column="23" />
           <folding>
             <element signature="e#704#721#0" expanded="true" />
             <element signature="e#3943#4368#0" expanded="false" />
             <element signature="e#4950#6501#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine/machine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userprog/addrspace.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userprog/memorymanager.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="43" column="62" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
