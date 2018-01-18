@@ -18,7 +18,7 @@ private:
 
 public:
     int *processMap;
-    TranslationEntry *entries;
+    TranslationEntry **entries;
 
     MemoryManager(int numPages);
 
@@ -32,7 +32,7 @@ public:
 
     int NumOfFreePage();
 
-    int Alloc(int processNo, TranslationEntry &entry);
+    int Alloc(int processNo, TranslationEntry *entry);
 
     int AllocByForce();
 };

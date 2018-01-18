@@ -30,12 +30,14 @@
 //----------------------------------------------------------------------
 
 MemoryManager *memoryManager;
+MemoryManager *swapMemoryManager;
 ProcessTable *processTable;
 SyncConsole *syncConsole;
 int totalNumOfProcess = 10;
 long time= 0;
-void
-StartProcess(const char *filename)
+int NumSwapPages = 512;
+
+void  StartProcess(const char *filename)
 {
     DEBUG('a', "Trying to execute Process name:%s\n", filename);
     OpenFile *executable = fileSystem->Open(filename);
@@ -46,6 +48,7 @@ StartProcess(const char *filename)
     }
 
     memoryManager = new MemoryManager(NumPhysPages);
+    swapMemoryManager = new MemoryManager(NumSwapPages);
     processTable = new ProcessTable(totalNumOfProcess);
     syncConsole = new SyncConsole();
 
@@ -57,6 +60,7 @@ StartProcess(const char *filename)
 
     currentThread->space->InitRegisters();		// set the initial register values
     currentThread->space->RestoreState();		// load page table register
+
 
     machine->Run();			// jump to the user progam
     ASSERT(false);			// machine->Run never returns;

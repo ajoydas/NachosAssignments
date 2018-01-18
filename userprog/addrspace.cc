@@ -174,59 +174,96 @@ void AddrSpace::loadIntoFreePage(int addr, int physicalPageNo){
     pageTable[vpn].physicalPage = physicalPageNo;
     pageTable[vpn].valid = true;
 
-    DEBUG('v',"\n\n\n");
-    DEBUG('v',"code size = %d, code infileAddr: %d, data size %d undata size = %d\n\n",
-          noffH.code.size, noffH.code.inFileAddr, noffH.initData.size, noffH.uninitData.size);
+    DEBUG('v',"\n");
+    DEBUG('v',"Requested addr = %d\n",addr);
+    bzero(&machine -> mainMemory[(pageTable[vpn].physicalPage) * PageSize], PageSize);
 
-    int codeOffset=0, codeSize=0, initDataOffset=0, initDataSize=0,
-            uninitDataOffset=0, uninitDataSize=0;
-    int physAddr = physicalPageNo*PageSize;
-    if(noffH.code.virtualAddr <= addr && (noffH.code.virtualAddr + noffH.code.size) > addr){
-        codeOffset = (addr - noffH.code.virtualAddr)/PageSize;
-        codeSize = noffH.code.size - codeOffset*PageSize;
-        codeSize = min(codeSize, PageSize);
-        if(noffH.code.size > 0){
-            DEBUG('v',"___code = %d___\n", codeSize);
-            executable->ReadAt(&machine->mainMemory[physAddr], codeSize,
-                               noffH.code.inFileAddr + codeOffset*PageSize);
-        }
-        if(codeSize < PageSize){
-            initDataSize = PageSize - codeSize;
-            initDataSize = min(initDataSize, noffH.initData.size);
-            DEBUG('v',"___code mid init data = %d___\n", initDataSize);
-            if(noffH.initData.size > 0){
-                executable->ReadAt(&machine->mainMemory[physAddr + codeSize],
-                                   initDataSize, noffH.initData.inFileAddr);
+
+    if(noffH.code.size>0)
+    {
+        printf("code size== %d \n",noffH.code.size);
+        unsigned int codeNumPages;
+        codeNumPages=divRoundUp(noffH.code.size,PageSize);
+        //printf("Code page nUm= %d \n", codeNumPages);
+
+        unsigned int initPageNum=noffH.code.virtualAddr/PageSize;
+
+        //printf("initPageNum== %d \n",initPageNum);
+
+        unsigned int lastPageNum=(noffH.code.virtualAddr+noffH.code.size)/ PageSize;
+
+        //printf("lastPageNum== %d\n",lastPageNum);
+        if( (vpn >= initPageNum) && (vpn <= lastPageNum) ){
+
+            //printf("noffH.code.virtualAddr== %d\n", noffH.code.virtualAddr);
+            //printf("vpn*PageSize==%d \n",vpn*PageSize);
+            if(noffH.code.virtualAddr>= vpn*PageSize){
+                unsigned int initOffset=PageSize - (noffH.code.virtualAddr % PageSize);
+                printf("starting from vpn in Code= %d\n",(pageTable[vpn].physicalPage*PageSize)+
+                                                         (noffH.code.virtualAddr % PageSize));
+                printf("initOffset== %d \n",initOffset);
+                printf("code file init==%d \n",noffH.code.inFileAddr);
+                executable->ReadAt(&(machine->mainMemory[(pageTable[vpn].physicalPage*PageSize)+
+                                                         (noffH.code.virtualAddr % PageSize)]),
+                                   initOffset,noffH.code.inFileAddr);
             }
+            else if((noffH.code.virtualAddr+noffH.code.size) < (vpn+1)*PageSize){
+                //printf("else if\n");
+                unsigned int extra=(noffH.code.virtualAddr+noffH.code.size)-vpn*PageSize;
+                executable->ReadAt(&(machine->mainMemory[(pageTable[vpn].physicalPage*PageSize)]),
+                                   extra,noffH.code.inFileAddr+((vpn*PageSize)-noffH.code.virtualAddr));
+            }
+            else
+            {
+                //printf("else \n");
+                executable->ReadAt(&(machine->mainMemory[(pageTable[vpn].physicalPage*PageSize)]),
+                                   PageSize,noffH.code.inFileAddr+((vpn*PageSize)-noffH.code.virtualAddr));
+            }
+
         }
-        if((codeSize + initDataSize) < PageSize){
-            int freePageSize = PageSize - codeSize - initDataSize;
-            DEBUG('v',"___code mid uninit data = %d___\n", freePageSize);
-            bzero(&machine->mainMemory[physAddr + codeSize + initDataSize], freePageSize);
+
+    }
+
+    if(noffH.initData.size>0){
+
+        printf("Data Size== %d \n",noffH.initData.size);
+        unsigned int dataNumPages;
+        dataNumPages=divRoundUp(noffH.initData.size,PageSize);
+        printf("Code page nUm= %d \n", dataNumPages);
+        unsigned int initDataPageNum=noffH.initData.virtualAddr/PageSize;
+        printf("initDataPageNum== %d \n",initDataPageNum);
+
+        unsigned int lastDataPageNum=(noffH.initData.virtualAddr+noffH.initData.size)/ PageSize;
+
+        if(vpn>=initDataPageNum && vpn <= lastDataPageNum){
+
+            if(noffH.initData.virtualAddr>= vpn*PageSize){
+                unsigned int initDataOffset=PageSize - (noffH.initData.virtualAddr % PageSize);
+                printf("starting from vpn for Data= %d\n",(pageTable[vpn].physicalPage*PageSize)+
+                                                          (noffH.initData.virtualAddr % PageSize));
+                printf("initDataOffset== %d \n",initDataOffset);
+                printf("Data file init==%d \n",noffH.initData.inFileAddr);
+                executable->ReadAt(&(machine->mainMemory[(pageTable[vpn].physicalPage*PageSize)+
+                                                         (noffH.initData.virtualAddr % PageSize)]),
+                                   initDataOffset,noffH.initData.inFileAddr);
+            }
+            else if((noffH.initData.virtualAddr+noffH.initData.size) < (vpn+1)*PageSize){
+                //printf("else if\n");
+                unsigned int extra=(noffH.initData.virtualAddr+noffH.initData.size)-vpn*PageSize;
+                executable->ReadAt(&(machine->mainMemory[(pageTable[vpn].physicalPage*PageSize)]),
+                                   extra,noffH.initData.inFileAddr+((vpn*PageSize)-noffH.initData.virtualAddr));
+            }
+            else
+            {
+                //printf("else \n");
+                executable->ReadAt(&(machine->mainMemory[(pageTable[vpn].physicalPage*PageSize)]),
+                                   PageSize,noffH.initData.inFileAddr+((vpn*PageSize)-noffH.initData.virtualAddr));
+            }
+
+
         }
+
     }
-    else if(noffH.initData.virtualAddr <= addr && (noffH.initData.virtualAddr + noffH.initData.size) > addr){
-        initDataOffset = (addr - noffH.initData.virtualAddr)/PageSize;
-        initDataSize = min(noffH.initData.size - initDataOffset*PageSize, PageSize);
-        if(noffH.initData.size > 0 ){
-            DEBUG('v',"___init data = %d___\n", initDataSize);
-            executable->ReadAt(&machine->mainMemory[physAddr], initDataSize, noffH.initData.inFileAddr + initDataOffset*PageSize);
-        }
-        if(initDataSize < PageSize){
-            int freePageSize = PageSize - initDataSize;
-            DEBUG('v',"___init mid uninit data = %d___\n", freePageSize);
-            bzero(&machine->mainMemory[physAddr + initDataSize], freePageSize);
-        }
-    }
-    else if(noffH.uninitData.virtualAddr <= addr && (noffH.uninitData.virtualAddr + noffH.uninitData.size) > addr){
-        DEBUG('v',"___uninit  data = %d___\n", PageSize);
-        bzero(&machine->mainMemory[physAddr], PageSize);
-    }
-    else{
-        DEBUG('v',"___zero = %d___\n", PageSize);
-        bzero(&machine->mainMemory[physAddr], PageSize);
-    }
-    printf("\n\n\n");
 }
 
 //----------------------------------------------------------------------
@@ -236,7 +273,7 @@ void AddrSpace::loadIntoFreePage(int addr, int physicalPageNo){
 
 AddrSpace::~AddrSpace()
 {
-    delete executable;
+//    delete executable;
 //    for(int i=0; i<numPages; i++)
 //    {
 //        memoryManager->FreePage(pageTable[i].physicalPage);

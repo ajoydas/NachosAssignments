@@ -77,7 +77,7 @@ void forkFuncForProgram(int pid) {
     Thread *thread = (Thread *)(processTable->Get(pid));
     thread->space->InitRegisters();		// set the initial register values
     thread->space->RestoreState();		// load page table register
-    DEBUG('a', "Forking new thread with pid: %d", pid);
+    DEBUG('a', "Forking new thread with pid: %d\n", pid);
     machine->Run();
     ASSERT(false);
 }
@@ -102,7 +102,7 @@ SpaceId Exec(char *name) {
                          reinterpret_cast<void *>(pid));
         }
 
-        delete executable;
+        //delete executable;
         return pid;
     }
     // Can't open executable file, so return -1.
@@ -159,12 +159,12 @@ ExceptionHandler(ExceptionType which)
                 int vpn = faultAddr/PageSize;
                 int physPageNo;
                 if (memoryManager->NumOfFreePage() > 0) {
-                    physPageNo = memoryManager->Alloc(currentThread->spaceId, machine->pageTable[vpn]);
+                    physPageNo = memoryManager->Alloc(currentThread->spaceId, &(machine->pageTable[vpn]));
 
                 } else {
                     physPageNo = memoryManager->AllocByForce();
-                    memoryManager->processMap[physPageNo] = currentThread->spaceId;
-                    memoryManager->entries[physPageNo] = machine->pageTable[vpn];
+//                    memoryManager->processMap[physPageNo] = currentThread->spaceId;
+//                    memoryManager->entries[physPageNo] = &(machine->pageTable[vpn]);
                 }
                 currentThread->space->loadIntoFreePage(faultAddr, physPageNo);
             }
@@ -201,6 +201,7 @@ void SysCallExecHandler(int arg1) {
     {
         machine->ReadMem(arg1 + i, 1, (int*)&filename[i]);
     }while(filename[i++] != '\0');
+    filename[0]='.';
 
     DEBUG('a', "Trying to execute Process name: %s\n", filename);
     int pid = Exec(filename);
