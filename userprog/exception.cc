@@ -169,13 +169,13 @@ ExceptionHandler(ExceptionType which)
                     int virtNo = memoryManager->entries[physPageNo]->virtualPage;
                     Thread* process = (Thread*)processTable->Get(processNo);
                     TranslationEntry* table = process->space->getPageTable();
-                    if( table->swapPage == -1 || table[virtNo].dirty ){
+                    if( memoryManager->entries[physPageNo]->swapPage == -1 || memoryManager->entries[physPageNo]->dirty ){
 
                         process->space->saveIntoSwapSpace(virtNo, processNo);
 
                     }
-                    table[virtNo].valid = false;
-                    table[virtNo].physicalPage = -1;
+                    memoryManager->entries[physPageNo]->valid = false;
+                    memoryManager->entries[physPageNo]->physicalPage = -1;
 
                     memoryManager->processMap[physPageNo] = currentThread->spaceId;
                     memoryManager->entries[physPageNo] = &(machine->pageTable[vpn]);
